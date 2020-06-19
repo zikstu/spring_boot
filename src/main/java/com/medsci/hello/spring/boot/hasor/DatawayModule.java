@@ -27,4 +27,5 @@ public class DatawayModule implements Module {
     public void loadModule(ApiBinder apiBinder) throws Throwable {
         apiBinder.installModule(new JdbcModule(Level.Full, this.dataSource));
     }
+    
 }
