@@ -1,0 +1,106 @@
+server:
+  servlet:
+    context-path: /boot
+  port: 8088
+
+spring:
+  application:
+    name: hello-spring-boot
+  thymeleaf:
+    cache: false # 开发时关闭缓存，不然无法看到实时页面
+    mode: HTML # 用非严格的html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHicariPC
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  ## QQ邮箱配置
+  mail:
+    host: smtp.medsci.cn #发送邮件服务器
+    username: service@medsci.cn #发送邮件的邮箱地址
+    password: Bom+bom.cn190809 #客户端授权码，不是邮箱密码，这个在qq邮箱设置里面自动生成的
+    properties.mail.smtp.port: 25 #端口号465或587
+    from: service@medsci.cn # 发送邮件的地址，和上面username一致可以任意
+    #properties.mail.smtp.starttls.enable: true
+    #properties.mail.smtp.starttls.required: true
+    #properties.mail.smtp.ssl.enable: true
+    default-encoding: utf-8
+
+  # kafka配置
+  kafka:
+    bootstrap-servers: 106.13.219.85:9092
+    producer:
+      # 发生错误后，消息重发的次数。
+      retries: 0
+      #当有多个消息需要被发送到同一个分区时，生产者会把它们放在同一个批次里。该参数指定了一个批次可以使用的内存大小，按照字节数计算。
+      batch-size: 16384
+      # 设置生产者内存缓冲区的大小。
+      buffer-memory: 33554432
+      # 键的序列化方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 值的序列化方式
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # acks=0 ： 生产者在成功写入消息之前不会等待任何来自服务器的响应。
+      # acks=1 ： 只要集群的首领节点收到消息，生产者就会收到一个来自服务器成功响应。
+      # acks=all ：只有当所有参与复制的节点全部收到消息时，生产者才会收到一个来自服务器的成功响应。
+      acks: 1
+    consumer:
+      # 自动提交的时间间隔 在spring boot 2.X 版本中这里采用的是值的类型为Duration 需要符合特定的格式，如1S,1M,2H,5D
+      auto-commit-interval: 1S
+      # 该属性指定了消费者在读取一个没有偏移量的分区或者偏移量无效的情况下该作何处理：
+      # latest（默认值）在偏移量无效的情况下，消费者将从最新的记录开始读取数据（在消费者启动之后生成的记录）
+      # earliest ：在偏移量无效的情况下，消费者将从起始位置读取分区的记录
+      auto-offset-reset: earliest
+      # 是否自动提交偏移量，默认值是true,为了避免出现重复数据和数据丢失，可以把它设置为false,然后手动提交偏移量
+      enable-auto-commit: false
+      # 键的反序列化方式
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      # 值的反序列化方式
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener:
+      # 在侦听器容器中运行的线程数。
+      concurrency: 5
+      #listner负责ack，每调用一次，就立即commit
+      ack-mode: manual_immediate
+      missing-topics-fatal: false
+
+mybatis:
+  type-aliases-package: com.medsci.hello.spring.boot.domain
+  mapper-locations: classpath:mapper/*.xml
+
+# 分页配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+logging:
+  file:
+    name: hello-spring-boot.log
+    path: /logs
+  pattern:
+    level: DEBUG
+
+
+#------------------------------Dataway配置-------------------------------------------------
+HASOR_DATAQL_DATAWAY: true # 是否启用 Dataway 功能（必选：默认false）
+HASOR_DATAQL_DATAWAY_ADMIN: true # 是否开启 Dataway 后台管理界面（必选：默认false）
+HASOR_DATAQL_DATAWAY_API_URL: /api/ # dataway  API工作路径（可选，默认：/api/）
+HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/ # dataway-ui 的工作路径（可选，默认：/interface-ui/）
+HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议设置）
