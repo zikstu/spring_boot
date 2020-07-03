@@ -32,7 +32,7 @@ public class SwaggerConfiguration {
                 .groupName("1.0版本")
                 .select()
                 //这里指定Controller扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.medsci.hello.spring.boot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.medsci.hello.spring.boot"))
                 .paths(PathSelectors.any())
                 .build();
         return docket;

@@ -41,7 +41,6 @@ spring:
     #properties.mail.smtp.ssl.enable: true
     default-encoding: utf-8
 
-  # kafka配置
 
 mybatis:
   type-aliases-package: com.medsci.hello.spring.boot.domain

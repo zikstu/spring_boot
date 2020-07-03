@@ -1,5 +1,6 @@
 package com.medsci.hello.spring.boot;
 
+import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import net.hasor.spring.boot.EnableHasor;
 import net.hasor.spring.boot.EnableHasorWeb;
 import org.springframework.boot.SpringApplication;
@@ -14,6 +15,7 @@ import javax.servlet.MultipartConfigElement;
 @EnableHasor
 @EnableHasorWeb
 @SpringBootApplication
+@NacosPropertySource(dataId = "hello-spring-boot", autoRefreshed = true)
 @MapperScan(basePackages = "com.medsci.hello.spring.boot.mapper")
 public class HelloSpringBootApplication {
 
