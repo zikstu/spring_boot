@@ -3,6 +3,8 @@ package com.medsci.hello.spring.boot.domain;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
+
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 /**
@@ -10,6 +12,7 @@ import lombok.Data;
     */
 @Data
 @Table(name = "product")
+@ApiModel(value = "product", description = "产品")
 public class Product implements Serializable {
     /**
      * id
@@ -44,4 +47,6 @@ public class Product implements Serializable {
     private String updateAt;
 
     private static final long serialVersionUID = 1L;
+
+    private Company company;
 }

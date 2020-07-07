@@ -9,4 +9,6 @@ import tk.mybatis.mapper.MyMapper;
 @Mapper
 public interface ProductMapper<findAllByProductNameLike> extends MyMapper<Product> {
     List<Product> findAllByProductNameLike(@Param("likeProductName")String likeProductName);
+
+    List<Product> productList();
 }

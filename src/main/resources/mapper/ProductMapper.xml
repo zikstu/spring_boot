@@ -22,4 +22,11 @@
     from product
     where product_name like concat('%',#{likeProductName,jdbcType=VARCHAR},'%')
   </select>
+  
+  <resultMap id="ProductResultMap" type="com.medsci.hello.spring.boot.domain.Product" extends="BaseResultMap">
+    <association property="company" resultMap="com.medsci.hello.spring.boot.mapper.CompanyMapper.BaseResultMap"></association>
+  </resultMap>
+  <select id="productList" resultMap="ProductResultMap">
+    select p.*,c.id,c.company_name from product as p join company as c on c.id = p.company_id
+  </select>
 </mapper>

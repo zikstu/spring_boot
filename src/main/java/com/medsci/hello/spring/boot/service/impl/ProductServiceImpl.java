@@ -1,4 +1,6 @@
 package com.medsci.hello.spring.boot.service.impl;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.medsci.hello.spring.boot.domain.Product;
 import java.util.List;
 
@@ -21,6 +23,17 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Product> findAllByProductNameLike(String likeProductName){
 		 return productMapper.findAllByProductNameLike(likeProductName);
+	}
+
+	@Override
+	public PageInfo<Product> productList(Integer page, Integer per) {
+		PageHelper.startPage(page, per);
+
+		List<Product> list = productMapper.productList();
+
+		PageInfo<Product> pageInfo = new PageInfo<>(list);
+
+		return pageInfo;
 	}
 
 }

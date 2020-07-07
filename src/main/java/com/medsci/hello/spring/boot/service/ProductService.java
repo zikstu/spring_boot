@@ -1,5 +1,6 @@
 package com.medsci.hello.spring.boot.service;
 
+import com.github.pagehelper.PageInfo;
 import com.medsci.hello.spring.boot.domain.Product;
 import java.util.List;
 
@@ -10,4 +11,6 @@ import java.util.List;
  */
 public interface ProductService {
 	List<Product> findAllByProductNameLike(String likeProductName);
+
+	PageInfo<Product> productList(Integer page, Integer per);
 }
