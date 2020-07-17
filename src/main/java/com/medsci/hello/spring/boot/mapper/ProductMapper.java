@@ -7,8 +7,10 @@ import org.apache.ibatis.annotations.Mapper;
 import tk.mybatis.mapper.MyMapper;
 
 @Mapper
-public interface ProductMapper<findAllByProductNameLike> extends MyMapper<Product> {
+public interface ProductMapper extends MyMapper<Product> {
     List<Product> findAllByProductNameLike(@Param("likeProductName")String likeProductName);
 
     List<Product> productList();
+
+    int insertProduct(Product product);
 }

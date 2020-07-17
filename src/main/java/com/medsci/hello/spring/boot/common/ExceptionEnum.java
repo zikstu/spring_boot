@@ -17,7 +17,8 @@ public enum ExceptionEnum {
     SERVER_FAIL(1000000, "系统异常稍后重试"),
     USER_NOT_FUND(100001, "未找到用户"),
     USER_UPDATE_FAIL(500, "用户修改失败"),
-    USER_DELETE_FAIL(500, "用户删除失败");
+    USER_DELETE_FAIL(500, "用户删除失败"),
+    PRODUCT_CREATED_FAIL(500, "添加产品失败");
 
     public int getCode() {
         return code;

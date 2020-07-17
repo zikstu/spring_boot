@@ -2,11 +2,13 @@ package com.medsci.hello.spring.boot.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
+import com.medsci.hello.spring.boot.common.ExceptionEnum;
 import com.medsci.hello.spring.boot.common.ResponseBean;
 import com.medsci.hello.spring.boot.domain.Product;
 import com.medsci.hello.spring.boot.service.ProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import net.hasor.web.annotation.RequestBody;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,5 +42,18 @@ public class ProductController {
     public ResponseBean productList(@RequestParam(value = "page") Integer page, @RequestParam(value = "per") Integer per){
         PageInfo<Product> pageInfo = productService.productList(page, per);
         return ResponseBean.ok(pageInfo);
+    }
+
+    @PostMapping("/store")
+    @ApiOperation(value = "添加产品")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean insert(@RequestBody Product productData){
+        Boolean aBoolean = productService.insert(productData);
+
+        if (aBoolean) {
+            return ResponseBean.ok("success");
+        }
+
+        return ResponseBean.error(ExceptionEnum.PRODUCT_CREATED_FAIL);
     }
 }

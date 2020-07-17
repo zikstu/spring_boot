@@ -13,4 +13,6 @@ public interface ProductService {
 	List<Product> findAllByProductNameLike(String likeProductName);
 
 	PageInfo<Product> productList(Integer page, Integer per);
+
+	Boolean insert(Product product);
 }

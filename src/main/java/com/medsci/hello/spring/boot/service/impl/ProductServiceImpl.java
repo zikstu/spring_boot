@@ -36,4 +36,14 @@ public class ProductServiceImpl implements ProductService {
 		return pageInfo;
 	}
 
+	@Override
+	public Boolean insert(Product product){
+		int insert = productMapper.insertProduct(product);
+
+		if (insert == 1){
+			return true;
+		}
+
+		return false;
+	}
 }
