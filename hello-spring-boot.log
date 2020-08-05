@@ -1,17 +1,17 @@
-2020-07-17 16:18:49.371 DEBUG 59094 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
-2020-07-17 16:18:49.376 DEBUG 59094 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
-2020-07-17 16:18:49.386 DEBUG 59094 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 59094 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
-2020-07-17 16:18:49.387 DEBUG 59094 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : No active profile set, falling back to default profiles: default
-2020-07-17 16:18:50.591 DEBUG 59094 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
-2020-07-17 16:18:50.591 DEBUG 59094 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
-2020-07-17 16:18:50.591 DEBUG 59094 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
-2020-07-17 16:18:50.591 DEBUG 59094 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
-2020-07-17 16:18:51.491 DEBUG 59094 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2020-07-17 16:18:51.502 DEBUG 59094 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-07-17 16:18:51.503 DEBUG 59094 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-07-17 16:18:51.594 DEBUG 59094 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
-2020-07-17 16:18:51.594 DEBUG 59094 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2148 ms
-2020-07-17 16:18:51.683 DEBUG 59094 --- [main] n.h.spring.boot.BasicHasorConfiguration  : 
+2020-08-05 13:59:04.985 DEBUG 3024 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 13:59:05.000 DEBUG 3024 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 13:59:05.008 DEBUG 3024 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3024 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 13:59:05.009 DEBUG 3024 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : No active profile set, falling back to default profiles: default
+2020-08-05 13:59:06.087 DEBUG 3024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 13:59:06.087 DEBUG 3024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 13:59:06.087 DEBUG 3024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 13:59:06.088 DEBUG 3024 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 13:59:06.875 DEBUG 3024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 13:59:06.884 DEBUG 3024 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 13:59:06.884 DEBUG 3024 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 13:59:06.956 DEBUG 3024 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 13:59:06.956 DEBUG 3024 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1902 ms
+2020-08-05 13:59:07.044 DEBUG 3024 --- [main] n.h.spring.boot.BasicHasorConfiguration  : 
  _    _                        ____              _
 | |  | |                      |  _ \            | |
 | |__| | __ _ ___  ___  _ __  | |_) | ___   ___ | |_
@@ -19,53 +19,678 @@
 | |  | | (_| \__ \ (_) | |    | |_) | (_) | (_) | |_
 |_|  |_|\__,_|___/\___/|_|    |____/ \___/ \___/ \__|
 
-2020-07-17 16:18:51.691 DEBUG 59094 --- [main] net.hasor.core.Hasor                     : runMode at Full ,runPath at /Users/xuezhang/Java/spring/hello-spring-boot
-2020-07-17 16:18:51.697 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/core-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-core/4.1.8/hasor-core-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.698 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataway-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataway/4.1.8/hasor-dataway-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.699 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/web-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-web/4.1.8/hasor-web-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.700 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/db-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-db/4.1.8/hasor-db-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.700 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql/4.1.8/hasor-dataql-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.701 DEBUG 59094 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-fx-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql-fx/4.1.8/hasor-dataql-fx-4.1.8.jar!/META-INF/hasor.schemas'
-2020-07-17 16:18:51.720 DEBUG 59094 --- [main] n.h.c.environment.AbstractEnvironment    : loadPackages = com.*, net.*, net.hasor.*, net.hasor.dataql.*, net.hasor.dataql.fx.*, net.hasor.dataway.*, net.hasor.db.*, net.hasor.web.*, org.*
-2020-07-17 16:18:51.795 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataway.config.DatawayModule
-2020-07-17 16:18:51.798 DEBUG 59094 --- [main] net.hasor.dataway.config.DatawayModule   : dataway is disable.
-2020-07-17 16:18:51.798 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.web.render.RenderWebPlugin
-2020-07-17 16:18:51.805 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.startup.StartupModule
-2020-07-17 16:18:51.805 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.aop.AopModule
-2020-07-17 16:18:51.808 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataql.fx.FxModule
-2020-07-17 16:18:51.813 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class com.medsci.hello.spring.boot.hasor.DatawayModule
-2020-07-17 16:18:51.814 DEBUG 59094 --- [main] n.h.core.context.TemplateAppContext$1    : installModule ->net.hasor.db.JdbcModule@36510e73
-2020-07-17 16:18:51.821 DEBUG 59094 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.spring.boot.BasicHasorConfiguration$$Lambda$408/93974967
-2020-07-17 16:18:51.841 DEBUG 59094 --- [main] net.hasor.web.render.RenderWebPlugin     : RenderPlugin init -> useLayout=false, layoutPath=/layout, templatePath=/templates, placeholder=content_placeholder, defaultLayout=default.html
-2020-07-17 16:18:51.843 DEBUG 59094 --- [Hasor-EventPool-1] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted!
-2020-07-17 16:18:51.878 DEBUG 59094 --- [main] n.h.spring.boot.WebHasorConfiguration    : @EnableHasorWeb -> filterPath='/*', filterOrder='0', filterWorkAt='Filter'
-2020-07-17 16:18:52.010 DEBUG 59094 --- [main] net.hasor.web.startup.RuntimeListener    : ServletContext Attribut is net.hasor.core.AppContext
-2020-07-17 16:18:52.029 DEBUG 59094 --- [main] net.hasor.web.startup.RuntimeFilter      : RuntimeFilter started, at Apache Tomcat/9.0.33
-2020-07-17 16:18:53.306 DEBUG 59094 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-07-17 16:18:53.641 DEBUG 59094 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-07-17 16:18:53.761 DEBUG 59094 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-07-17 16:18:53.927 DEBUG 59094 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2020-07-17 16:18:53.927 DEBUG 59094 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2020-07-17 16:18:53.927 DEBUG 59094 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2020-07-17 16:18:53.928 DEBUG 59094 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
-2020-07-17 16:18:54.342 DEBUG 59094 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-07-17 16:18:54.360 DEBUG 59094 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-07-17 16:18:54.390 DEBUG 59094 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-07-17 16:18:54.609 DEBUG 59094 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
-2020-07-17 16:18:54.635 DEBUG 59094 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='helloSpringBootApplication', bean='null', beanType='class com.medsci.hello.spring.boot.HelloSpringBootApplication', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@47b2e9e1', timestamp='1594973930404'
-2020-07-17 16:18:54.635 DEBUG 59094 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='multipartConfigElement', bean='null', beanType='null', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@47b2e9e1', timestamp='1594973930561'
-2020-07-17 16:18:54.690 DEBUG 59094 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/boot'
-2020-07-17 16:18:54.695 DEBUG 59094 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Started HelloSpringBootApplication in 5.89 seconds (JVM running for 6.73)
-2020-07-17 16:19:20.427 DEBUG 59094 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-07-17 16:19:20.427 DEBUG 59094 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-07-17 16:19:20.450 DEBUG 59094 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
-2020-07-17 16:19:32.755 DEBUG 59094 --- [http-nio-8088-exec-10] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Starting...
-2020-07-17 16:19:32.922 DEBUG 59094 --- [http-nio-8088-exec-10] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Start completed.
-2020-07-17 16:19:39.025 DEBUG 59094 --- [Hasor-ShutdownHook] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted.
-2020-07-17 16:19:39.027 DEBUG 59094 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-07-17 16:19:39.029 DEBUG 59094 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'shutdown' on bean with name 'webAppContext' threw an exception: java.lang.IllegalStateException: the container is not started yet.
-2020-07-17 16:19:39.029 DEBUG 59094 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown initiated...
-2020-07-17 16:19:39.036 DEBUG 59094 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown completed.
-2020-07-17 16:19:39.036 DEBUG 59094 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : false was destroying!
-2020-07-17 16:19:39.036 DEBUG 59094 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
-2020-07-17 16:19:39.036 DEBUG 59094 --- [SpringContextShutdownHook] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 13:59:07.052 DEBUG 3024 --- [main] net.hasor.core.Hasor                     : runMode at Full ,runPath at /Users/xuezhang/Java/spring/hello-spring-boot
+2020-08-05 13:59:07.057 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/core-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-core/4.1.8/hasor-core-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.058 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataway-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataway/4.1.8/hasor-dataway-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.058 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/web-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-web/4.1.8/hasor-web-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.059 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/db-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-db/4.1.8/hasor-db-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.059 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql/4.1.8/hasor-dataql-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.060 DEBUG 3024 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-fx-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql-fx/4.1.8/hasor-dataql-fx-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 13:59:07.075 DEBUG 3024 --- [main] n.h.c.environment.AbstractEnvironment    : loadPackages = com.*, net.*, net.hasor.*, net.hasor.dataql.*, net.hasor.dataql.fx.*, net.hasor.dataway.*, net.hasor.db.*, net.hasor.web.*, org.*
+2020-08-05 13:59:07.137 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataway.config.DatawayModule
+2020-08-05 13:59:07.139 DEBUG 3024 --- [main] net.hasor.dataway.config.DatawayModule   : dataway is disable.
+2020-08-05 13:59:07.139 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.web.render.RenderWebPlugin
+2020-08-05 13:59:07.145 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.startup.StartupModule
+2020-08-05 13:59:07.145 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.aop.AopModule
+2020-08-05 13:59:07.147 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataql.fx.FxModule
+2020-08-05 13:59:07.152 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class com.medsci.hello.spring.boot.hasor.DatawayModule
+2020-08-05 13:59:07.153 DEBUG 3024 --- [main] n.h.core.context.TemplateAppContext$1    : installModule ->net.hasor.db.JdbcModule@bb8ead8
+2020-08-05 13:59:07.159 DEBUG 3024 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.spring.boot.BasicHasorConfiguration$$Lambda$408/1944370016
+2020-08-05 13:59:07.176 DEBUG 3024 --- [main] net.hasor.web.render.RenderWebPlugin     : RenderPlugin init -> useLayout=false, layoutPath=/layout, templatePath=/templates, placeholder=content_placeholder, defaultLayout=default.html
+2020-08-05 13:59:07.178 DEBUG 3024 --- [Hasor-EventPool-1] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted!
+2020-08-05 13:59:07.206 DEBUG 3024 --- [main] n.h.spring.boot.WebHasorConfiguration    : @EnableHasorWeb -> filterPath='/*', filterOrder='0', filterWorkAt='Filter'
+2020-08-05 13:59:07.310 DEBUG 3024 --- [main] net.hasor.web.startup.RuntimeListener    : ServletContext Attribut is net.hasor.core.AppContext
+2020-08-05 13:59:07.327 DEBUG 3024 --- [main] net.hasor.web.startup.RuntimeFilter      : RuntimeFilter started, at Apache Tomcat/9.0.33
+2020-08-05 13:59:08.418 DEBUG 3024 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-05 13:59:08.737 DEBUG 3024 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 13:59:08.850 DEBUG 3024 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 13:59:08.992 DEBUG 3024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-05 13:59:08.993 DEBUG 3024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-05 13:59:08.993 DEBUG 3024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-05 13:59:08.993 DEBUG 3024 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-08-05 13:59:09.383 DEBUG 3024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-05 13:59:09.404 DEBUG 3024 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-05 13:59:09.429 DEBUG 3024 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-05 13:59:09.561 DEBUG 3024 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2020-08-05 13:59:09.579 DEBUG 3024 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='helloSpringBootApplication', bean='null', beanType='class com.medsci.hello.spring.boot.HelloSpringBootApplication', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@4e2916c3', timestamp='1596607145890'
+2020-08-05 13:59:09.579 DEBUG 3024 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='multipartConfigElement', bean='null', beanType='null', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@4e2916c3', timestamp='1596607146062'
+2020-08-05 13:59:09.621 DEBUG 3024 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/boot'
+2020-08-05 13:59:09.624 DEBUG 3024 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Started HelloSpringBootApplication in 5.026 seconds (JVM running for 6.233)
+2020-08-05 14:00:09.632 DEBUG 3024 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 14:00:09.632 DEBUG 3024 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 14:00:09.660 DEBUG 3024 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-08-05 14:15:39.869 DEBUG 3024 --- [http-nio-8088-exec-5] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Starting...
+2020-08-05 14:15:40.185 DEBUG 3024 --- [http-nio-8088-exec-5] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Start completed.
+2020-08-05 14:20:07.473 DEBUG 3024 --- [Hasor-ShutdownHook] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted.
+2020-08-05 14:20:07.475 DEBUG 3024 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 14:20:07.476 DEBUG 3024 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'shutdown' on bean with name 'webAppContext' threw an exception: java.lang.IllegalStateException: the container is not started yet.
+2020-08-05 14:20:07.476 DEBUG 3024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown initiated...
+2020-08-05 14:20:07.485 DEBUG 3024 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown completed.
+2020-08-05 14:20:07.485 DEBUG 3024 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : false was destroying!
+2020-08-05 14:20:07.485 DEBUG 3024 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 14:20:07.485 DEBUG 3024 --- [SpringContextShutdownHook] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 14:21:22.488 DEBUG 3270 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 14:21:22.490 DEBUG 3270 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 14:21:22.497 DEBUG 3270 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3270 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 14:21:22.498 DEBUG 3270 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 14:21:23.455 DEBUG 3270 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:21:23.455 DEBUG 3270 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:21:23.455 DEBUG 3270 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:21:23.456 DEBUG 3270 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 14:21:24.208 DEBUG 3270 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 14:21:24.215 DEBUG 3270 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 14:21:24.215 DEBUG 3270 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 14:21:24.271 DEBUG 3270 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 14:21:24.271 DEBUG 3270 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1730 ms
+2020-08-05 14:21:24.339 DEBUG 3270 --- [main] n.h.spring.boot.BasicHasorConfiguration  : 
+ _    _                        ____              _
+| |  | |                      |  _ \            | |
+| |__| | __ _ ___  ___  _ __  | |_) | ___   ___ | |_
+|  __  |/ _` / __|/ _ \| '__| |  _ < / _ \ / _ \| __|
+| |  | | (_| \__ \ (_) | |    | |_) | (_) | (_) | |_
+|_|  |_|\__,_|___/\___/|_|    |____/ \___/ \___/ \__|
+
+2020-08-05 14:21:24.344 DEBUG 3270 --- [main] net.hasor.core.Hasor                     : runMode at Full ,runPath at /Users/xuezhang/Java/spring/hello-spring-boot
+2020-08-05 14:21:24.347 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/core-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-core/4.1.8/hasor-core-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.348 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataway-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataway/4.1.8/hasor-dataway-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.348 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/web-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-web/4.1.8/hasor-web-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.349 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/db-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-db/4.1.8/hasor-db-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.349 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql/4.1.8/hasor-dataql-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.349 DEBUG 3270 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-fx-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql-fx/4.1.8/hasor-dataql-fx-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 14:21:24.362 DEBUG 3270 --- [main] n.h.c.environment.AbstractEnvironment    : loadPackages = com.*, net.*, net.hasor.*, net.hasor.dataql.*, net.hasor.dataql.fx.*, net.hasor.dataway.*, net.hasor.db.*, net.hasor.web.*, org.*
+2020-08-05 14:21:24.410 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataway.config.DatawayModule
+2020-08-05 14:21:24.412 DEBUG 3270 --- [main] net.hasor.dataway.config.DatawayModule   : dataway is disable.
+2020-08-05 14:21:24.412 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.web.render.RenderWebPlugin
+2020-08-05 14:21:24.417 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.startup.StartupModule
+2020-08-05 14:21:24.417 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.aop.AopModule
+2020-08-05 14:21:24.419 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataql.fx.FxModule
+2020-08-05 14:21:24.422 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class com.medsci.hello.spring.boot.hasor.DatawayModule
+2020-08-05 14:21:24.423 DEBUG 3270 --- [main] n.h.core.context.TemplateAppContext$1    : installModule ->net.hasor.db.JdbcModule@47fb7ec9
+2020-08-05 14:21:24.427 DEBUG 3270 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.spring.boot.BasicHasorConfiguration$$Lambda$409/383005108
+2020-08-05 14:21:24.441 DEBUG 3270 --- [main] net.hasor.web.render.RenderWebPlugin     : RenderPlugin init -> useLayout=false, layoutPath=/layout, templatePath=/templates, placeholder=content_placeholder, defaultLayout=default.html
+2020-08-05 14:21:24.442 DEBUG 3270 --- [Hasor-EventPool-1] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted!
+2020-08-05 14:21:24.470 DEBUG 3270 --- [main] n.h.spring.boot.WebHasorConfiguration    : @EnableHasorWeb -> filterPath='/*', filterOrder='0', filterWorkAt='Filter'
+2020-08-05 14:21:24.570 DEBUG 3270 --- [main] net.hasor.web.startup.RuntimeListener    : ServletContext Attribut is net.hasor.core.AppContext
+2020-08-05 14:21:24.584 DEBUG 3270 --- [main] net.hasor.web.startup.RuntimeFilter      : RuntimeFilter started, at Apache Tomcat/9.0.33
+2020-08-05 14:21:25.588 DEBUG 3270 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-05 14:21:25.823 DEBUG 3270 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 14:21:25.920 DEBUG 3270 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 14:21:26.057 DEBUG 3270 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-05 14:21:26.058 DEBUG 3270 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-05 14:21:26.058 DEBUG 3270 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-05 14:21:26.058 DEBUG 3270 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-08-05 14:21:26.400 DEBUG 3270 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-05 14:21:26.411 DEBUG 3270 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-05 14:21:26.433 DEBUG 3270 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-05 14:21:26.574 DEBUG 3270 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2020-08-05 14:21:26.590 DEBUG 3270 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='helloSpringBootApplication', bean='null', beanType='class com.medsci.hello.spring.boot.HelloSpringBootApplication', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@6d467c87', timestamp='1596608483234'
+2020-08-05 14:21:26.590 DEBUG 3270 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot', groupId='text_nacos', beanName='multipartConfigElement', bean='null', beanType='null', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@6d467c87', timestamp='1596608483423'
+2020-08-05 14:21:26.628 DEBUG 3270 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/boot'
+2020-08-05 14:21:26.631 DEBUG 3270 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Started HelloSpringBootApplication in 4.508 seconds (JVM running for 5.01)
+2020-08-05 14:21:30.038 DEBUG 3270 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 14:21:30.038 DEBUG 3270 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 14:21:30.060 DEBUG 3270 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-08-05 14:21:30.136 DEBUG 3270 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Starting...
+2020-08-05 14:21:30.257 DEBUG 3270 --- [http-nio-8088-exec-1] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Start completed.
+2020-08-05 14:23:18.751 DEBUG 3270 --- [Hasor-ShutdownHook] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted.
+2020-08-05 14:23:18.754 DEBUG 3270 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 14:23:18.755 DEBUG 3270 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'shutdown' on bean with name 'webAppContext' threw an exception: java.lang.IllegalStateException: the container is not started yet.
+2020-08-05 14:23:18.756 DEBUG 3270 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown initiated...
+2020-08-05 14:23:18.761 DEBUG 3270 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown completed.
+2020-08-05 14:23:18.762 DEBUG 3270 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : false was destroying!
+2020-08-05 14:23:18.762 DEBUG 3270 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 14:23:18.762 DEBUG 3270 --- [SpringContextShutdownHook] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 14:23:20.836 DEBUG 3295 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 14:23:20.839 DEBUG 3295 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 14:23:20.846 DEBUG 3295 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3295 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 14:23:20.847 DEBUG 3295 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 14:23:21.743 DEBUG 3295 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:23:21.743 DEBUG 3295 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:23:21.743 DEBUG 3295 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:23:21.743 DEBUG 3295 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 14:23:22.401 DEBUG 3295 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 14:23:22.408 DEBUG 3295 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 14:23:22.408 DEBUG 3295 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 14:23:22.465 DEBUG 3295 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 14:23:22.465 DEBUG 3295 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1573 ms
+2020-08-05 14:23:22.493 DEBUG 3295 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 14:23:22.508 DEBUG 3295 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 14:23:22.513 DEBUG 3295 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 14:23:22.513 DEBUG 3295 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 14:23:22.513 DEBUG 3295 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 14:23:22.520 DEBUG 3295 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 14:23:22.524 DEBUG 3295 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 14:52:08.550 DEBUG 3412 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 14:52:08.554 DEBUG 3412 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 14:52:08.563 DEBUG 3412 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3412 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 14:52:08.563 DEBUG 3412 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 14:52:09.582 DEBUG 3412 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:52:09.582 DEBUG 3412 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:52:09.582 DEBUG 3412 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:52:09.582 DEBUG 3412 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 14:52:10.294 DEBUG 3412 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 14:52:10.301 DEBUG 3412 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 14:52:10.302 DEBUG 3412 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 14:52:10.363 DEBUG 3412 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 14:52:10.363 DEBUG 3412 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1749 ms
+2020-08-05 14:52:10.397 DEBUG 3412 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 14:52:10.414 DEBUG 3412 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 14:52:10.420 DEBUG 3412 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 14:52:10.420 DEBUG 3412 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 14:52:10.420 DEBUG 3412 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 14:52:10.427 DEBUG 3412 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 14:52:10.432 DEBUG 3412 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 14:57:44.476 DEBUG 3426 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='hello-spring-boot', dataIds='null', group='text_nacos', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 14:57:44.479 DEBUG 3426 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 14:57:44.485 DEBUG 3426 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3426 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 14:57:44.485 DEBUG 3426 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 14:57:45.420 DEBUG 3426 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:57:45.420 DEBUG 3426 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:57:45.421 DEBUG 3426 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 14:57:45.421 DEBUG 3426 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 14:57:46.138 DEBUG 3426 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 14:57:46.145 DEBUG 3426 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 14:57:46.145 DEBUG 3426 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 14:57:46.201 DEBUG 3426 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 14:57:46.201 DEBUG 3426 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1678 ms
+2020-08-05 14:57:46.230 DEBUG 3426 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 14:57:46.244 DEBUG 3426 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 14:57:46.249 DEBUG 3426 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 14:57:46.249 DEBUG 3426 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 14:57:46.249 DEBUG 3426 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 14:57:46.256 DEBUG 3426 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 14:57:46.260 DEBUG 3426 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:03:39.988 DEBUG 3448 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='text_nacos', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:03:39.990 DEBUG 3448 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:03:39.996 DEBUG 3448 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3448 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:03:39.996 DEBUG 3448 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:03:40.867 DEBUG 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:03:40.867 DEBUG 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:03:40.867 DEBUG 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:03:40.867 DEBUG 3448 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:03:41.459 DEBUG 3448 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:03:41.465 DEBUG 3448 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:03:41.465 DEBUG 3448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:03:41.550 DEBUG 3448 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:03:41.550 DEBUG 3448 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1516 ms
+2020-08-05 15:03:41.576 DEBUG 3448 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:03:41.588 DEBUG 3448 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:03:41.592 DEBUG 3448 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:03:41.593 DEBUG 3448 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:03:41.593 DEBUG 3448 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:03:41.599 DEBUG 3448 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:03:41.603 DEBUG 3448 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:06:59.251 DEBUG 3457 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='text_nacos', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:06:59.254 DEBUG 3457 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:06:59.269 DEBUG 3457 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3457 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:06:59.269 DEBUG 3457 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:06:59.776 DEBUG 3457 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:06:59.776 DEBUG 3457 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:06:59.776 DEBUG 3457 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:06:59.777 DEBUG 3457 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:07:00.360 DEBUG 3457 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:07:00.366 DEBUG 3457 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:07:00.366 DEBUG 3457 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:07:00.411 DEBUG 3457 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:07:00.411 DEBUG 3457 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1108 ms
+2020-08-05 15:07:00.434 DEBUG 3457 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:07:00.446 DEBUG 3457 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:07:00.450 DEBUG 3457 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:07:00.450 DEBUG 3457 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:07:00.450 DEBUG 3457 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:07:00.456 DEBUG 3457 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:07:00.460 DEBUG 3457 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:07:25.437 DEBUG 3464 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='text_nacos', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:07:25.439 DEBUG 3464 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:07:25.456 DEBUG 3464 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3464 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:07:25.456 DEBUG 3464 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:07:26.315 DEBUG 3464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:26.315 DEBUG 3464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:26.315 DEBUG 3464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:26.315 DEBUG 3464 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:07:26.896 DEBUG 3464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:07:26.902 DEBUG 3464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:07:26.903 DEBUG 3464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:07:26.996 DEBUG 3464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:07:26.996 DEBUG 3464 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1504 ms
+2020-08-05 15:07:27.023 DEBUG 3464 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:07:27.035 DEBUG 3464 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:07:27.039 DEBUG 3464 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:07:27.039 DEBUG 3464 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:07:27.040 DEBUG 3464 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:07:27.045 DEBUG 3464 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:07:27.049 DEBUG 3464 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:07:54.712 DEBUG 3470 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:07:54.714 DEBUG 3470 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:07:54.720 DEBUG 3470 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3470 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:07:54.720 DEBUG 3470 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:07:55.556 DEBUG 3470 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:55.556 DEBUG 3470 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:55.556 DEBUG 3470 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:07:55.556 DEBUG 3470 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:07:56.135 DEBUG 3470 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:07:56.140 DEBUG 3470 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:07:56.141 DEBUG 3470 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:07:56.226 DEBUG 3470 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:07:56.226 DEBUG 3470 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1470 ms
+2020-08-05 15:07:56.251 DEBUG 3470 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:07:56.262 DEBUG 3470 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:07:56.267 DEBUG 3470 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:07:56.267 DEBUG 3470 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:07:56.267 DEBUG 3470 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:07:56.274 DEBUG 3470 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:07:56.278 DEBUG 3470 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:17:33.380 DEBUG 3554 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:17:33.391 DEBUG 3554 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:17:33.398 DEBUG 3554 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3554 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:17:33.398 DEBUG 3554 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:17:34.223 DEBUG 3554 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:17:34.223 DEBUG 3554 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:17:34.223 DEBUG 3554 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:17:34.223 DEBUG 3554 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:17:34.789 DEBUG 3554 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:17:34.795 DEBUG 3554 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:17:34.795 DEBUG 3554 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:17:34.882 DEBUG 3554 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:17:34.882 DEBUG 3554 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1447 ms
+2020-08-05 15:17:34.906 DEBUG 3554 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:17:34.918 DEBUG 3554 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:17:34.922 DEBUG 3554 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:17:34.922 DEBUG 3554 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:17:34.922 DEBUG 3554 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:17:34.928 DEBUG 3554 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:17:34.932 DEBUG 3554 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:17:47.471 DEBUG 3559 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=false}}
+2020-08-05 15:17:47.529 DEBUG 3559 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: 'value' must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:123) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolvePlaceholders(AbstractPropertyResolver.java:202) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractEnvironment.resolvePlaceholders(AbstractEnvironment.java:566) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:109) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:65) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:88) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.medsci.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:23) [classes/:na]
+
+2020-08-05 15:18:07.868 DEBUG 3571 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=false}}
+2020-08-05 15:18:07.931 DEBUG 3571 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: 'value' must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:123) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolvePlaceholders(AbstractPropertyResolver.java:202) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractEnvironment.resolvePlaceholders(AbstractEnvironment.java:566) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:109) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:65) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:88) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.medsci.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:23) [classes/:na]
+
+2020-08-05 15:23:07.183 DEBUG 3581 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=false}}
+2020-08-05 15:23:07.244 DEBUG 3581 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalArgumentException: 'value' must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:198) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:123) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolvePlaceholders(AbstractPropertyResolver.java:202) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.core.env.AbstractEnvironment.resolvePlaceholders(AbstractEnvironment.java:566) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:109) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:65) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:88) ~[nacos-config-spring-boot-autoconfigure-0.2.6.jar:0.2.6]
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.medsci.hello.spring.boot.HelloSpringBootApplication.main(HelloSpringBootApplication.java:23) [classes/:na]
+
+2020-08-05 15:23:27.439 DEBUG 3585 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:23:27.442 DEBUG 3585 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:23:27.448 DEBUG 3585 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3585 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:23:27.448 DEBUG 3585 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:23:28.041 DEBUG 3585 --- [main] c.e.AnnotationNacosPropertySourceBuilder : There is no content for NacosPropertySource from dataId[hello-spring-boot] , groupId[DEFAULT_GROUP] , properties[{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}].
+2020-08-05 15:23:28.237 DEBUG 3585 --- [main] c.e.AnnotationNacosPropertySourceBuilder : There is no content for NacosPropertySource from dataId[hello-spring-boot] , groupId[DEFAULT_GROUP] , properties[{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}].
+2020-08-05 15:23:28.264 DEBUG 3585 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:23:28.264 DEBUG 3585 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:23:28.264 DEBUG 3585 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:23:28.264 DEBUG 3585 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:23:28.845 DEBUG 3585 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:23:28.850 DEBUG 3585 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:23:28.850 DEBUG 3585 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:23:28.933 DEBUG 3585 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:23:28.933 DEBUG 3585 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1447 ms
+2020-08-05 15:23:28.957 DEBUG 3585 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'net.hasor.spring.boot.WebHasorConfiguration': Unsatisfied dependency expressed through field 'appContext'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'net.hasor.spring.boot.BasicHasorConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'datawayModule': Unsatisfied dependency expressed through field 'dataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-08-05 15:23:28.968 DEBUG 3585 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-05 15:23:28.973 DEBUG 3585 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-08-05 15:23:28.973 DEBUG 3585 --- [main] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:23:28.973 DEBUG 3585 --- [main] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:23:28.980 DEBUG 3585 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-05 15:23:28.983 DEBUG 3585 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2020-08-05 15:25:30.777 DEBUG 3592 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='192.168.16.163:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:25:30.781 DEBUG 3592 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:25:30.788 DEBUG 3592 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3592 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:25:30.788 DEBUG 3592 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:25:31.701 DEBUG 3592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:25:31.702 DEBUG 3592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:25:31.702 DEBUG 3592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:25:31.702 DEBUG 3592 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:25:32.415 DEBUG 3592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:25:32.422 DEBUG 3592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:25:32.423 DEBUG 3592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:25:32.478 DEBUG 3592 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:25:32.479 DEBUG 3592 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1650 ms
+2020-08-05 15:25:32.550 DEBUG 3592 --- [main] n.h.spring.boot.BasicHasorConfiguration  : 
+ _    _                        ____              _
+| |  | |                      |  _ \            | |
+| |__| | __ _ ___  ___  _ __  | |_) | ___   ___ | |_
+|  __  |/ _` / __|/ _ \| '__| |  _ < / _ \ / _ \| __|
+| |  | | (_| \__ \ (_) | |    | |_) | (_) | (_) | |_
+|_|  |_|\__,_|___/\___/|_|    |____/ \___/ \___/ \__|
+
+2020-08-05 15:25:32.556 DEBUG 3592 --- [main] net.hasor.core.Hasor                     : runMode at Full ,runPath at /Users/xuezhang/Java/spring/hello-spring-boot
+2020-08-05 15:25:32.559 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/core-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-core/4.1.8/hasor-core-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.560 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataway-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataway/4.1.8/hasor-dataway-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.561 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/web-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-web/4.1.8/hasor-web-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.561 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/db-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-db/4.1.8/hasor-db-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.562 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql/4.1.8/hasor-dataql-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.562 DEBUG 3592 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-fx-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql-fx/4.1.8/hasor-dataql-fx-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:25:32.575 DEBUG 3592 --- [main] n.h.c.environment.AbstractEnvironment    : loadPackages = com.*, net.*, net.hasor.*, net.hasor.dataql.*, net.hasor.dataql.fx.*, net.hasor.dataway.*, net.hasor.db.*, net.hasor.web.*, org.*
+2020-08-05 15:25:32.627 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataway.config.DatawayModule
+2020-08-05 15:25:32.628 DEBUG 3592 --- [main] net.hasor.dataway.config.DatawayModule   : dataway is disable.
+2020-08-05 15:25:32.628 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.web.render.RenderWebPlugin
+2020-08-05 15:25:32.634 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.startup.StartupModule
+2020-08-05 15:25:32.634 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.aop.AopModule
+2020-08-05 15:25:32.635 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataql.fx.FxModule
+2020-08-05 15:25:32.638 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class com.medsci.hello.spring.boot.hasor.DatawayModule
+2020-08-05 15:25:32.639 DEBUG 3592 --- [main] n.h.core.context.TemplateAppContext$1    : installModule ->net.hasor.db.JdbcModule@59328218
+2020-08-05 15:25:32.645 DEBUG 3592 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.spring.boot.BasicHasorConfiguration$$Lambda$409/1179830093
+2020-08-05 15:25:32.661 DEBUG 3592 --- [main] net.hasor.web.render.RenderWebPlugin     : RenderPlugin init -> useLayout=false, layoutPath=/layout, templatePath=/templates, placeholder=content_placeholder, defaultLayout=default.html
+2020-08-05 15:25:32.662 DEBUG 3592 --- [Hasor-EventPool-1] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted!
+2020-08-05 15:25:32.689 DEBUG 3592 --- [main] n.h.spring.boot.WebHasorConfiguration    : @EnableHasorWeb -> filterPath='/*', filterOrder='0', filterWorkAt='Filter'
+2020-08-05 15:25:32.788 DEBUG 3592 --- [main] net.hasor.web.startup.RuntimeListener    : ServletContext Attribut is net.hasor.core.AppContext
+2020-08-05 15:25:32.805 DEBUG 3592 --- [main] net.hasor.web.startup.RuntimeFilter      : RuntimeFilter started, at Apache Tomcat/9.0.33
+2020-08-05 15:25:33.842 DEBUG 3592 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-05 15:25:34.087 DEBUG 3592 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 15:25:34.182 DEBUG 3592 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 15:25:34.318 DEBUG 3592 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-05 15:25:34.318 DEBUG 3592 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-05 15:25:34.318 DEBUG 3592 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-05 15:25:34.319 DEBUG 3592 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-08-05 15:25:34.710 DEBUG 3592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-05 15:25:34.723 DEBUG 3592 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-05 15:25:34.745 DEBUG 3592 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-05 15:25:34.886 DEBUG 3592 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2020-08-05 15:25:34.902 DEBUG 3592 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot.yaml', groupId='DEFAULT_GROUP', beanName='helloSpringBootApplication', bean='null', beanType='class com.medsci.hello.spring.boot.HelloSpringBootApplication', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=192.168.16.163:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@e4d2696', timestamp='1596612331485'
+2020-08-05 15:25:34.902 DEBUG 3592 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot.yaml', groupId='DEFAULT_GROUP', beanName='multipartConfigElement', bean='null', beanType='null', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=192.168.16.163:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@e4d2696', timestamp='1596612331672'
+2020-08-05 15:25:34.941 DEBUG 3592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/boot'
+2020-08-05 15:25:34.944 DEBUG 3592 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Started HelloSpringBootApplication in 4.541 seconds (JVM running for 5.028)
+2020-08-05 15:25:41.400 DEBUG 3592 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-05 15:25:41.400 DEBUG 3592 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-05 15:25:41.420 DEBUG 3592 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-08-05 15:25:46.874 DEBUG 3592 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Starting...
+2020-08-05 15:25:46.996 DEBUG 3592 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Start completed.
+2020-08-05 15:30:14.460 DEBUG 3592 --- [Hasor-ShutdownHook] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted.
+2020-08-05 15:30:14.461 DEBUG 3592 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 15:30:14.462 DEBUG 3592 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'shutdown' on bean with name 'webAppContext' threw an exception: java.lang.IllegalStateException: the container is not started yet.
+2020-08-05 15:30:14.463 DEBUG 3592 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown initiated...
+2020-08-05 15:30:14.469 DEBUG 3592 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : MyHicariPC - Shutdown completed.
+2020-08-05 15:30:14.469 DEBUG 3592 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : false was destroying!
+2020-08-05 15:30:14.470 DEBUG 3592 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:30:14.470 DEBUG 3592 --- [SpringContextShutdownHook] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-08-05 15:30:16.561 DEBUG 3626 --- [main] c.a.b.n.c.u.NacosConfigPropertiesUtils   : nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=null, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, logEnable=false}}
+2020-08-05 15:30:16.563 DEBUG 3626 --- [main] NacosConfigApplicationContextInitializer : [Nacos Config Boot] : The preload configuration is not enabled
+2020-08-05 15:30:16.570 DEBUG 3626 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Starting HelloSpringBootApplication on xuezhangdeMacBook-Pro.local with PID 3626 (/Users/xuezhang/Java/spring/hello-spring-boot/target/classes started by xuezhang in /Users/xuezhang/Java/spring/hello-spring-boot)
+2020-08-05 15:30:16.571 DEBUG 3626 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : The following profiles are active: dev
+2020-08-05 15:30:17.509 DEBUG 3626 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'companyMapper' and 'com.medsci.hello.spring.boot.mapper.CompanyMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:30:17.509 DEBUG 3626 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'productMapper' and 'com.medsci.hello.spring.boot.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:30:17.509 DEBUG 3626 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userMapper' and 'com.medsci.hello.spring.boot.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-08-05 15:30:17.509 DEBUG 3626 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.medsci.hello.spring.boot]' package. Please check your configuration.
+2020-08-05 15:30:18.323 DEBUG 3626 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-05 15:30:18.330 DEBUG 3626 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-05 15:30:18.330 DEBUG 3626 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-08-05 15:30:18.385 DEBUG 3626 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/boot]   : Initializing Spring embedded WebApplicationContext
+2020-08-05 15:30:18.385 DEBUG 3626 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1770 ms
+2020-08-05 15:30:18.455 DEBUG 3626 --- [main] n.h.spring.boot.BasicHasorConfiguration  : 
+ _    _                        ____              _
+| |  | |                      |  _ \            | |
+| |__| | __ _ ___  ___  _ __  | |_) | ___   ___ | |_
+|  __  |/ _` / __|/ _ \| '__| |  _ < / _ \ / _ \| __|
+| |  | | (_| \__ \ (_) | |    | |_) | (_) | (_) | |_
+|_|  |_|\__,_|___/\___/|_|    |____/ \___/ \___/ \__|
+
+2020-08-05 15:30:18.461 DEBUG 3626 --- [main] net.hasor.core.Hasor                     : runMode at Full ,runPath at /Users/xuezhang/Java/spring/hello-spring-boot
+2020-08-05 15:30:18.464 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/core-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-core/4.1.8/hasor-core-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.465 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataway-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataway/4.1.8/hasor-dataway-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.465 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/web-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-web/4.1.8/hasor-web-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.466 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/db-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-db/4.1.8/hasor-db-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.466 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql/4.1.8/hasor-dataql-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.466 DEBUG 3626 --- [main] n.h.c.setting.StandardContextSettings    : addConfig '/META-INF/hasor-framework/dataql-fx-hconfig.xml' in 'jar:file:/Users/xuezhang/.m2/repository/net/hasor/hasor-dataql-fx/4.1.8/hasor-dataql-fx-4.1.8.jar!/META-INF/hasor.schemas'
+2020-08-05 15:30:18.478 DEBUG 3626 --- [main] n.h.c.environment.AbstractEnvironment    : loadPackages = com.*, net.*, net.hasor.*, net.hasor.dataql.*, net.hasor.dataql.fx.*, net.hasor.dataway.*, net.hasor.db.*, net.hasor.web.*, org.*
+2020-08-05 15:30:18.526 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataway.config.DatawayModule
+2020-08-05 15:30:18.528 DEBUG 3626 --- [main] net.hasor.dataway.config.DatawayModule   : dataway is disable.
+2020-08-05 15:30:18.528 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.web.render.RenderWebPlugin
+2020-08-05 15:30:18.533 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.startup.StartupModule
+2020-08-05 15:30:18.533 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.core.exts.aop.AopModule
+2020-08-05 15:30:18.535 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.dataql.fx.FxModule
+2020-08-05 15:30:18.538 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class com.medsci.hello.spring.boot.hasor.DatawayModule
+2020-08-05 15:30:18.539 DEBUG 3626 --- [main] n.h.core.context.TemplateAppContext$1    : installModule ->net.hasor.db.JdbcModule@42d9e8d2
+2020-08-05 15:30:18.543 DEBUG 3626 --- [main] n.hasor.core.context.TemplateAppContext  : loadModule class net.hasor.spring.boot.BasicHasorConfiguration$$Lambda$409/1620368915
+2020-08-05 15:30:18.558 DEBUG 3626 --- [main] net.hasor.web.render.RenderWebPlugin     : RenderPlugin init -> useLayout=false, layoutPath=/layout, templatePath=/templates, placeholder=content_placeholder, defaultLayout=default.html
+2020-08-05 15:30:18.559 DEBUG 3626 --- [Hasor-EventPool-1] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted!
+2020-08-05 15:30:18.589 DEBUG 3626 --- [main] n.h.spring.boot.WebHasorConfiguration    : @EnableHasorWeb -> filterPath='/*', filterOrder='0', filterWorkAt='Filter'
+2020-08-05 15:30:18.690 DEBUG 3626 --- [main] net.hasor.web.startup.RuntimeListener    : ServletContext Attribut is net.hasor.core.AppContext
+2020-08-05 15:30:18.704 DEBUG 3626 --- [main] net.hasor.web.startup.RuntimeFilter      : RuntimeFilter started, at Apache Tomcat/9.0.33
+2020-08-05 15:30:19.725 DEBUG 3626 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-05 15:30:19.974 DEBUG 3626 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-05 15:30:20.072 DEBUG 3626 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-08-05 15:30:20.212 DEBUG 3626 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-08-05 15:30:20.213 DEBUG 3626 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-08-05 15:30:20.213 DEBUG 3626 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-08-05 15:30:20.213 DEBUG 3626 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2020-08-05 15:30:20.557 DEBUG 3626 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-05 15:30:20.569 DEBUG 3626 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-05 15:30:20.590 DEBUG 3626 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-05 15:30:20.737 DEBUG 3626 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: insertUsingPOST_1
+2020-08-05 15:30:20.754 DEBUG 3626 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot.yaml', groupId='DEFAULT_GROUP', beanName='helloSpringBootApplication', bean='null', beanType='class com.medsci.hello.spring.boot.HelloSpringBootApplication', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@36bc415e', timestamp='1596612617293'
+2020-08-05 15:30:20.754 DEBUG 3626 --- [main] .LoggingNacosConfigMetadataEventListener : Nacos Config Metadata : dataId='hello-spring-boot.yaml', groupId='DEFAULT_GROUP', beanName='multipartConfigElement', bean='null', beanType='null', annotatedElement='null', xmlResource='null', nacosProperties='{maxRetry=${nacos.config.maxRetry${nacos.maxRetry:}}, configRetryTime=${nacos.config.configRetryTime${nacos.configRetryTime:}}, serverAddr=127.0.0.1:8848, encode=UTF-8, configLongPollTimeout=${nacos.config.configLongPollTimeout${nacos.configLongPollTimeout:}}, enableRemoteSyncConfig=false}', nacosPropertiesAttributes='{accessKey=${nacos.access-key:}, clusterName=${nacos.cluster-name:}, configLongPollTimeout=${nacos.configLongPollTimeout:}, configRetryTime=${nacos.configRetryTime:}, contextPath=${nacos.context-path:}, enableRemoteSyncConfig=${nacos.enableRemoteSyncConfig:}, encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, maxRetry=${nacos.maxRetry:}, namespace=${nacos.namespace:}, password=${nacos.password:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, username=${nacos.username:}}', source='org.springframework.core.type.StandardAnnotationMetadata@36bc415e', timestamp='1596612617479'
+2020-08-05 15:30:20.792 DEBUG 3626 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/boot'
+2020-08-05 15:30:20.795 DEBUG 3626 --- [main] c.m.h.s.boot.HelloSpringBootApplication  : Started HelloSpringBootApplication in 4.621 seconds (JVM running for 5.084)
+2020-08-05 15:32:04.667 DEBUG 3626 --- [Hasor-ShutdownHook] n.hasor.core.context.TemplateAppContext  : Hasor StartCompleted.
+2020-08-05 15:32:04.669 DEBUG 3626 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-05 15:32:04.671 DEBUG 3626 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'shutdown' on bean with name 'webAppContext' threw an exception: java.lang.IllegalStateException: the container is not started yet.
+2020-08-05 15:32:04.672 DEBUG 3626 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : false was destroying!
+2020-08-05 15:32:04.672 DEBUG 3626 --- [SpringContextShutdownHook] .c.NacosValueAnnotationBeanPostProcessor : class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-08-05 15:32:04.672 DEBUG 3626 --- [SpringContextShutdownHook] AnnotationNacosInjectedBeanPostProcessor : class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!

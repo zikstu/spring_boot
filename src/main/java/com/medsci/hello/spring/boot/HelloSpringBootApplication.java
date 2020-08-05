@@ -15,7 +15,7 @@ import javax.servlet.MultipartConfigElement;
 @EnableHasor
 @EnableHasorWeb
 @SpringBootApplication
-@NacosPropertySource(dataId = "hello-spring-boot", groupId = "text_nacos", autoRefreshed = true)
+@NacosPropertySource(dataId = "hello-spring-boot.yaml", autoRefreshed = true)
 @MapperScan(basePackages = "com.medsci.hello.spring.boot.mapper")
 public class HelloSpringBootApplication {
 

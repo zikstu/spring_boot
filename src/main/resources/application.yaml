@@ -4,6 +4,9 @@ server:
   port: 8088
 
 spring:
+  # 环境 dev|uat|prod
+  profiles:
+    active: dev
   application:
     name: hello-spring-boot
   thymeleaf:
@@ -12,21 +15,6 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: root
-    password: root
-    hikari:
-      minimum-idle: 5
-      idle-timeout: 600000
-      maximum-pool-size: 10
-      auto-commit: true
-      pool-name: MyHicariPC
-      max-lifetime: 1800000
-      connection-timeout: 30000
-      connection-test-query: SELECT 1
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
   ## QQ邮箱配置
@@ -68,7 +56,4 @@ HASOR_DATAQL_DATAWAY_API_URL: /api/ # dataway  API工作路径（可选，默认
 HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/ # dataway-ui 的工作路径（可选，默认：/interface-ui/）
 HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议设置）
 
-#----nacos 配置-----
-nacos:
-  config:
-    server-addr: 127.0.0.1:8848
+
