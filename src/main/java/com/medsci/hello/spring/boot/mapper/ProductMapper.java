@@ -1,4 +1,6 @@
 package com.medsci.hello.spring.boot.mapper;
+
+import com.medsci.hello.spring.boot.dto.ProductDto;
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
@@ -13,4 +15,6 @@ public interface ProductMapper extends MyMapper<Product> {
     List<Product> productList();
 
     int insertProduct(Product product);
+
+    int updateByProductId(ProductDto productDto);
 }

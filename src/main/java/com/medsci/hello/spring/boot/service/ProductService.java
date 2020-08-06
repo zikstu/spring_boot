@@ -2,6 +2,8 @@ package com.medsci.hello.spring.boot.service;
 
 import com.github.pagehelper.PageInfo;
 import com.medsci.hello.spring.boot.domain.Product;
+import com.medsci.hello.spring.boot.dto.ProductDto;
+
 import java.util.List;
 
 /**
@@ -15,4 +17,6 @@ public interface ProductService {
 	PageInfo<Product> productList(Integer page, Integer per);
 
 	Boolean insert(Product product);
+
+	Boolean updateByProductId(ProductDto productDto);
 }

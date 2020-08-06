@@ -5,6 +5,7 @@ import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.medsci.hello.spring.boot.common.ExceptionEnum;
 import com.medsci.hello.spring.boot.common.ResponseBean;
 import com.medsci.hello.spring.boot.domain.Product;
+import com.medsci.hello.spring.boot.dto.ProductDto;
 import com.medsci.hello.spring.boot.service.ProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -55,5 +56,18 @@ public class ProductController {
         }
 
         return ResponseBean.error(ExceptionEnum.PRODUCT_CREATED_FAIL);
+    }
+
+    @PostMapping(path = "/updateByProductId")
+    @ApiOperation(value = "更新产品")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean updateByProductId(@RequestBody ProductDto productDto){
+        try {
+            productService.updateByProductId(productDto);
+            return ResponseBean.ok("success");
+        }catch (Exception e){
+            System.out.println("Error===" + e.getMessage());
+            return ResponseBean.error("未知错误！");
+        }
     }
 }

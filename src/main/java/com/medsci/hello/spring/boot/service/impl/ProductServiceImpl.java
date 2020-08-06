@@ -1,12 +1,15 @@
 package com.medsci.hello.spring.boot.service.impl;
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.medsci.hello.spring.boot.domain.Product;
 import java.util.List;
 
+import com.medsci.hello.spring.boot.dto.ProductDto;
 import com.medsci.hello.spring.boot.mapper.ProductMapper;
 import com.medsci.hello.spring.boot.service.ProductService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -41,6 +44,18 @@ public class ProductServiceImpl implements ProductService {
 		int insert = productMapper.insertProduct(product);
 
 		if (insert == 1){
+			return true;
+		}
+
+		return false;
+	}
+
+	@Override
+	@Transactional(rollbackFor = Exception.class)
+	public Boolean updateByProductId(ProductDto productDto) {
+		int i = productMapper.updateByProductId(productDto);
+
+		if (i > 0){
 			return true;
 		}
 

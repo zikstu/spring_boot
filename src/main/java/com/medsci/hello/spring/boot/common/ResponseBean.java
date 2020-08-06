@@ -81,6 +81,13 @@ public class ResponseBean implements Serializable {
         return responseBean;
     }
 
+    public static ResponseBean error(String msg) {
+        ResponseBean responseBean = new ResponseBean();
+        responseBean.setReturnCode(500);
+        responseBean.setReturnMsg(msg);
+        return responseBean;
+    }
+
     public static ResponseBean error(ExceptionEnum exceptionEnum) {
         ResponseBean responseBean = new ResponseBean();
         responseBean.setReturnCode(exceptionEnum.getCode());

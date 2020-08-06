@@ -10,6 +10,7 @@
     <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
     <result column="update_at" jdbcType="VARCHAR" property="updateAt" />
   </resultMap>
+  <sql id="table">product</sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated generated on Mon Jul 06 09:36:12 CST 2020.-->
     id, product_name, company_id, created_at, update_at
@@ -30,7 +31,22 @@
     select p.*,c.id,c.company_name from product as p join company as c on c.id = p.company_id
   </select>
 
-  <insert id="insertProduct" parameterType="Product">
+  <insert id="insertProduct" parameterType="com.medsci.hello.spring.boot.domain.Product">
     insert into product(product_name, companyId, created_at, updateAt) values (#{productName, javaType=string}, #{companyId,jdbcType=INTEGER}, #{createdAt,jdbcType=TIMESTAMP}, #{updateAt,jdbcType=VARCHAR});
   </insert>
+
+  <update id="updateByProductId" parameterType="com.medsci.hello.spring.boot.dto.ProductDto">
+    UPDATE
+    <include refid="table" />
+    <set>
+      <if test="productName != null">
+        product_name = #{productName},
+      </if>
+      <if test="companyId != null">
+        company_id = #{companyId},
+      </if>
+    </set>
+    WHERE
+    id = #{id}
+  </update>
 </mapper>
