@@ -63,8 +63,12 @@ public class ProductController {
     @ApiOperationSupport(author = "学长")
     public ResponseBean updateByProductId(@RequestBody ProductDto productDto){
         try {
-            productService.updateByProductId(productDto);
-            return ResponseBean.ok("success");
+            Boolean aBoolean = productService.updateByProductId(productDto);
+            if (aBoolean){
+                return ResponseBean.ok("success");
+            }
+
+            return ResponseBean.error("更新失败！");
         }catch (Exception e){
             System.out.println("Error===" + e.getMessage());
             return ResponseBean.error("未知错误！");
