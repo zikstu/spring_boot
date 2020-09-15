@@ -51,6 +51,13 @@ public class AuthServiceImpl implements AuthService {
         try {
             final UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
 
+            //验证密码
+            BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+
+            if (!bCryptPasswordEncoder.matches(password, userDetails.getPassword())){
+                throw new Exception("登录异常: 密码错误！" );
+            }
+
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
