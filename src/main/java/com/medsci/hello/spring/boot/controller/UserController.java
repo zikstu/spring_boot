@@ -1,15 +1,24 @@
 package com.medsci.hello.spring.boot.controller;
 
 
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.medsci.hello.spring.boot.common.ExceptionEnum;
 import com.medsci.hello.spring.boot.common.ResponseBean;
 import com.medsci.hello.spring.boot.domain.User;
+import com.medsci.hello.spring.boot.domain.Users;
 import com.medsci.hello.spring.boot.mapper.UserMapper;
+import com.medsci.hello.spring.boot.mapper.UsersMapper;
+import com.medsci.hello.spring.boot.service.AuthService;
 import com.medsci.hello.spring.boot.service.UserService;
+import io.swagger.annotations.ApiOperation;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @description:
@@ -20,11 +29,20 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+    @Value("${jwt.tokenHead}")
+    private String tokenHead;
+
     @Autowired
     private UserService userService;
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private UsersMapper usersMapper;
+
+    @Autowired
+    private AuthService authService;
 
 //    @MyAnnotation(name="ceshi")
     @PostMapping("/list")
@@ -113,5 +131,44 @@ public class UserController {
             responseBean.setReturnMsg("请求出现异常");
             return responseBean;
         }
+    }
+
+    @PostMapping("/auth/login")
+    @ApiOperation(value = "登录")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean login(@RequestParam("username") String username, @RequestParam("password") String password) throws Exception{
+        try {
+            final String token = authService.login(username, password);
+
+            Map<String, String> tokenMap = new HashMap<>();
+
+            tokenMap.put("token", token);
+            tokenMap.put("tokenHead", tokenHead);
+
+            return ResponseBean.ok(tokenMap);
+        }catch (Exception e){
+            return ResponseBean.error(e.getMessage());
+        }
+    }
+
+    @PostMapping("/auth/register")
+    @ApiOperation(value = "注册")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean register(@RequestParam("username") String username, @RequestParam("password") String password){
+        try {
+            Integer i = authService.register(username, password);
+
+            return ResponseBean.ok(i);
+        }catch (Exception e){
+            return ResponseBean.error(e.getMessage());
+        }
+    }
+
+    @GetMapping("/auth/findUsersByName")
+    @ApiOperation(value = "获取后台用户")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean findUsersByName(@RequestParam("username") String username){
+        Users byUserName = usersMapper.findByUserName(username);
+        return ResponseBean.ok(byUserName);
     }
 }

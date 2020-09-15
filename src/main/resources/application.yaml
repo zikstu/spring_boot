@@ -1,6 +1,4 @@
 server:
-  servlet:
-    context-path: /boot
   port: 8088
 
 spring:
@@ -56,4 +54,21 @@ HASOR_DATAQL_DATAWAY_API_URL: /api/ # dataway  API工作路径（可选，默认
 HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/ # dataway-ui 的工作路径（可选，默认：/interface-ui/）
 HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议设置）
 
-
+jwt:
+  header: Authorization
+  secret: spring-boot-secret
+  expiration: 604800
+  tokenHead: "Bearer "
+secure:
+  ignored:
+    urls: #安全路径白名单
+      - /swagger-ui.html
+      - /swagger-resources/**
+      - /swagger/**
+      - /**/v2/api-docs
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.ico
+      - /doc.html
+      - /user/auth/*
