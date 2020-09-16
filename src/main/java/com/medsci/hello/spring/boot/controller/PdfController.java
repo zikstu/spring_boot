@@ -29,12 +29,10 @@ public class PdfController {
     @GetMapping("/download")
     @ApiOperation(value = "pdf下载", notes = "根据网页url生成并下载")
     @ApiOperationSupport(author = "学长")
-    public ResponseBean download(@RequestParam(value = "pdfName", required = true) String pdfName,
+    public String download(@RequestParam(value = "pdfName", required = true) String pdfName,
                              @RequestParam(value = "url", required = true) String url,
                              HttpServletResponse response) throws IOException, InterruptedException
     {
-        ResponseBean responseBean = new ResponseBean();
-
         try{
             DownloadPdf downloadPdf = new DownloadPdf();
             downloadPdf.setFileName(pdfName);
@@ -76,10 +74,14 @@ public class PdfController {
                             os.write(buffer, 0, i);
                             i = bis.read(buffer);
                         }
-                        System.out.println("Download the song successfully!");
+
+                        /*删除本地文件*/
+                        file.delete();
+
+                        return "Download the pdf successfully!";
                     }
                     catch (Exception e) {
-                        System.out.println("Download the song failed!");
+                        return e.getMessage();
                     }
                     finally {
                         if (bis != null) {
@@ -98,20 +100,13 @@ public class PdfController {
                         }
                     }
                 }else {
-                    responseBean.setReturnMsg("文件不存在！");
-                    responseBean.setReturnCode(500);
+                    return "文件不存在！";
                 }
             }else {
-                responseBean.setReturnMsg("PDF创建失败！");
-                responseBean.setReturnCode(500);
+                return "PDF创建失败！";
             }
-
-            return responseBean;
-
         }catch (Exception exception){
-            responseBean.setReturnMsg(exception.getMessage());
-            responseBean.setReturnCode(500);
-            return responseBean;
+            return exception.getMessage();
         }
     }
 }

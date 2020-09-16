@@ -1,6 +1,7 @@
 package com.medsci.hello.spring.boot.wkhtmltopdf;
 
 import com.github.jhonnymertz.wkhtmltopdf.wrapper.Pdf;
+import com.github.jhonnymertz.wkhtmltopdf.wrapper.configurations.WrapperConfig;
 import com.github.jhonnymertz.wkhtmltopdf.wrapper.params.Param;
 import com.medsci.hello.spring.boot.dto.DownloadPdf;
 import org.apache.commons.lang3.StringUtils;
@@ -18,7 +19,7 @@ import java.io.IOException;
 public class Wkhtmltopdf {
     public File downloadResumePdf(DownloadPdf downloadPdf) throws IOException, InterruptedException {
         String path = downloadPdf.getPath()+"/"+downloadPdf.getFileName()+".pdf";
-        Pdf pdf = new Pdf();
+        Pdf pdf = new Pdf(new WrapperConfig("/usr/local/bin/wkhtmltopdf"));
         // 为目录添加样式
         //pdf.addTocParam(new Param("--xsl-style-sheet", "my_toc.xsl"));
         // ' wkhtmltopdf ' shell命令接受不同类型的选项，如全局、页面、页眉和页脚，以及toc。详情请参阅“wkhtmltopdf -H”。
