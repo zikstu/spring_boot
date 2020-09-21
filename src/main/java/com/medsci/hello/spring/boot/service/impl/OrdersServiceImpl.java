@@ -51,5 +51,10 @@ public class OrdersServiceImpl implements OrdersService {
         return null;
     }
 
+    @Override
+    public List<Orders> findAll(){
+        List<Orders> all = ordersMapper.findAll();
 
+        return all;
+    }
 }

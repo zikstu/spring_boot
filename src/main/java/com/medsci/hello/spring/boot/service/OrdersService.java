@@ -8,4 +8,6 @@ public interface OrdersService{
     List<Orders> ordersList(String source);
 
     Orders findByCode(String code);
+
+    List<Orders> findAll();
 }

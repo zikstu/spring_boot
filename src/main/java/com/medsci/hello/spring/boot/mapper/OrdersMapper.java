@@ -11,4 +11,9 @@ public interface OrdersMapper extends MyMapper<Orders> {
     List<Orders> findAllBySource(@Param("source")String source);
 
     Orders findByCode(@Param("code")String code);
+
+    List<Orders> findAll();
+
+
+
 }
