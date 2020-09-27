@@ -74,3 +74,7 @@ secure:
       - /user/auth/*
       - /pdf/*
       - /excel/*
+
+filePath:
+  sourcePath: temp/sourcePath/
+  uploadPath: temp/uploadPath/

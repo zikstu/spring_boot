@@ -17,4 +17,11 @@ public interface FileService {
      * @return
      */
     Map<String, List<String>> uploadImgs(MultipartFile[] files);
+
+    /**
+     * amr转mp3
+     * @param multipartFile
+     * @return
+     */
+    String AMR2MP3(MultipartFile multipartFile);
 }

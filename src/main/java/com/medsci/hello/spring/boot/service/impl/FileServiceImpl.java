@@ -2,17 +2,18 @@ package com.medsci.hello.spring.boot.service.impl;
 
 import com.medsci.hello.spring.boot.qiniu.QiniuUtil;
 import com.medsci.hello.spring.boot.service.FileService;
+import com.medsci.hello.spring.boot.utils.AudioFileFormat;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.kafka.common.protocol.types.Field;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 /**
@@ -23,6 +24,12 @@ import java.util.Map;
 @Service
 public class FileServiceImpl implements FileService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Autowired
+    private AudioFileFormat audioFileFormat;
+
+    @Autowired
+    private QiniuUtil qiniuUtil;
 
     @Override
     public Map<String, List<String>> uploadImgs(MultipartFile[] file){
@@ -49,7 +56,17 @@ public class FileServiceImpl implements FileService {
             try {
                 out = new BufferedOutputStream(new FileOutputStream(dest));
                 out.write(file[i].getBytes());
-                result = qn.uoloapQiniu(dest,fileName);
+
+                Date now = new Date();
+
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+                String formatNow = simpleDateFormat.format(now);
+
+                String qiniuFilePath = formatNow +  "/images/";
+
+                /*上传七牛云*/
+                result = qn.uoloapQiniu(dest,fileName, qiniuFilePath);
 
                 if (StringUtils.isNotBlank(result)) {
                     list.add(result);
@@ -68,6 +85,7 @@ public class FileServiceImpl implements FileService {
                     e.printStackTrace();
                 }
 
+                /*删除临时文件*/
                 if (dest.getParentFile().exists()) {
                     dest.delete();
                 }
@@ -81,4 +99,29 @@ public class FileServiceImpl implements FileService {
         return resultMap;
     }
 
+    @Override
+    public String AMR2MP3(MultipartFile multipartFile){
+        /*arm转mp3*/
+        File file = audioFileFormat.formatConversion(multipartFile);
+
+        if (file.exists()){
+            Date now = new Date();
+
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+            String formatNow = simpleDateFormat.format(now);
+
+            String qiniuFilePath = formatNow +  "/audio/";
+
+            /*上传七牛*/
+            String qiniuUrl = qiniuUtil.uoloapQiniu(file, file.getName(), qiniuFilePath);
+
+            /*删除临时文件*/
+            audioFileFormat.deleteTempFile(file.getName());
+
+            return qiniuUrl;
+        }
+
+        return null;
+    }
 }
