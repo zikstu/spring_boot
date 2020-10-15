@@ -21,6 +21,7 @@ import javax.servlet.MultipartConfigElement;
 public class HelloSpringBootApplication {
 
     public static void main(String[] args) {
+        System.setProperty("spring.devtools.restart.enabled", "false");
         SpringApplication.run(HelloSpringBootApplication.class, args);
     }
 
