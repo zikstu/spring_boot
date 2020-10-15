@@ -24,7 +24,7 @@ import javax.crypto.Cipher;
  * @author: 学长
  * @date: 2020/9/16 17:25
  */
-class RSAUtils {
+public class RSAUtils {
     /**
      * 签名算法
      */
@@ -61,7 +61,7 @@ class RSAUtils {
      * @return 密钥对 Map 对象
      * @throws Exception
      */
-    static Map<String, Object> resetGenKeyPair() throws Exception {
+    public static Map<String, Object> resetGenKeyPair() throws Exception {
         KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(KEY_ALGORITHM);
         keyPairGen.initialize(1024);
 
@@ -81,7 +81,7 @@ class RSAUtils {
      * @return 公钥
      * @throws Exception
      */
-    static String getPublicKey(Map<String, Object> keyMap) throws Exception {
+    public static String getPublicKey(Map<String, Object> keyMap) throws Exception {
         Key key = (Key) keyMap.get(PUBLIC_KEY);
         return Base64.encodeToString(key.getEncoded());
     }
@@ -92,7 +92,7 @@ class RSAUtils {
      * @return 私钥
      * @throws Exception
      */
-    static String getPrivateKey(Map<String, Object> keyMap) throws Exception {
+    public static String getPrivateKey(Map<String, Object> keyMap) throws Exception {
         Key key = (Key) keyMap.get(PRIVATE_KEY);
         return Base64.encodeToString(key.getEncoded());
     }
@@ -104,7 +104,7 @@ class RSAUtils {
      * @return 加密数据
      * @throws Exception
      */
-    static String sign(String data, String privateKey) throws Exception {
+    public static String sign(String data, String privateKey) throws Exception {
         byte[] keyBytes = Base64.decode(privateKey);
         PKCS8EncodedKeySpec pkcs8KeySpec = new PKCS8EncodedKeySpec(keyBytes);
 
@@ -125,7 +125,7 @@ class RSAUtils {
      * @return 验签结果
      * @throws Exception
      */
-    static boolean verifySign(String data, String publicKey, String sign) throws Exception {
+    public static boolean verifySign(String data, String publicKey, String sign) throws Exception {
         try {
             byte[] keyBytes = Base64.decode(publicKey);
 
@@ -150,7 +150,7 @@ class RSAUtils {
      * @return 加密数据
      * @throws Exception
      */
-    static String encryptByPrivateKey(String dataStr, String privateKey) throws Exception {
+    public static String encryptByPrivateKey(String dataStr, String privateKey) throws Exception {
         byte[] data     = dataStr.getBytes(ENCODING);
         byte[] keyBytes = Base64.decode(privateKey);
 
@@ -188,7 +188,7 @@ class RSAUtils {
      * @return 解密后数据
      * @throws Exception
      */
-    static String decryptByPublicKey(String encryptedDataStr, String publicKey) throws Exception {
+    public static String decryptByPublicKey(String encryptedDataStr, String publicKey) throws Exception {
         byte[] encryptedData = Base64.decode(encryptedDataStr);
         byte[] keyBytes      = Base64.decode(publicKey);
 
@@ -226,7 +226,7 @@ class RSAUtils {
      * @return 加密数据
      * @throws Exception
      */
-    static String encryptByPublicKey(String dataStr, String publicKey) throws Exception {
+    public static String encryptByPublicKey(String dataStr, String publicKey) throws Exception {
         byte[] data     = dataStr.getBytes(ENCODING);
         byte[] keyBytes = Base64.decode(publicKey);
 
@@ -264,7 +264,7 @@ class RSAUtils {
      * @return 解密后数据
      * @throws Exception
      */
-    static String decryptByPrivateKey(String encryptedDataStr, String privateKey) throws Exception {
+    public static String decryptByPrivateKey(String encryptedDataStr, String privateKey) throws Exception {
         byte[] encryptedData = Base64.decode(encryptedDataStr);
         byte[] keyBytes      = Base64.decode(privateKey);
 

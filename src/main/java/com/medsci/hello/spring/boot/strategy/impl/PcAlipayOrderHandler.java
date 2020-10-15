@@ -1,4 +1,4 @@
-package com.medsci.hello.spring.boot.strategy.handle;
+package com.medsci.hello.spring.boot.strategy.impl;
 
 import com.medsci.hello.spring.boot.annotation.OrderHandlerType;
 import com.medsci.hello.spring.boot.domain.Orders;
@@ -9,10 +9,10 @@ import com.medsci.hello.spring.boot.strategy.OrdersHandler;
  * @author: 学长
  * @date: 2020/9/15 14:09
  */
-@OrderHandlerType(source = "pc", payMethod = "wechat")
-public class PcWechatOrderHandler implements OrdersHandler {
+@OrderHandlerType(source = "pc", payMethod = "alipay")
+public class PcAlipayOrderHandler implements OrdersHandler {
     @Override
     public void handle(Orders order) {
-        System.out.println("PC端微信支付订单处理");
+        System.out.println("PC端支付宝支付订单处理");
     }
 }

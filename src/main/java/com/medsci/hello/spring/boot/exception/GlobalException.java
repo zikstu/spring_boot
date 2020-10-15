@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import java.security.InvalidKeyException;
+
 
 /**
  * @description:
@@ -19,5 +21,10 @@ public class GlobalException {
     @ExceptionHandler(ClassNotFoundException.class)
     public ResponseBean classNotFoundException(ClassNotFoundException e){
         return ResponseBean.error("class not found！");
+    }
+
+    @ExceptionHandler(InvalidKeyException.class)
+    public ResponseBean invalidKeyException(InvalidKeyException invalidKeyException){
+        return ResponseBean.error("私钥或公钥错误！");
     }
 }

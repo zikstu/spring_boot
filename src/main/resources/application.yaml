@@ -1,5 +1,9 @@
 server:
   port: 8088
+  servlet:
+    #应用路径，配置应用路径，可方便进行反向代理
+    context-path: /
+#    context-path: /xuezhang
 
 spring:
   # 环境 dev|uat|prod
@@ -74,6 +78,7 @@ secure:
       - /user/auth/*
       - /pdf/*
       - /excel/*
+      - /rsa/*
 
 filePath:
   sourcePath: temp/sourcePath/

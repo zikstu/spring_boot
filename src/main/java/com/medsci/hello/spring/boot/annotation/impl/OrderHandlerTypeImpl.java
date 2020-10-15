@@ -1,4 +1,4 @@
-package com.medsci.hello.spring.boot.strategy.impl;
+package com.medsci.hello.spring.boot.annotation.impl;
 
 import com.medsci.hello.spring.boot.annotation.OrderHandlerType;
 
