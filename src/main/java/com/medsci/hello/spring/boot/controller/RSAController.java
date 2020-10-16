@@ -36,6 +36,7 @@ public class RSAController {
 
     @Autowired
     public void setRsaHandlerMap(List<RSAHandler> rsaHandlerList){
+        //注入各种类型的rsa处理类
         rsaHandlerMap = rsaHandlerList
                 .stream()
                 .collect(Collectors.toMap(rsaHandler -> AnnotationUtils.findAnnotation(rsaHandler.getClass(), RSATypeAnnotation.class), v->v, (v1, v2)->v1));
