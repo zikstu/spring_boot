@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('拉取代码') {
          steps {
-           checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '507bcd6f-c8ea-4943-afdf-85915cc474d0', url: 'https://github.com/kanggeaiphp/spring_boot.git']]])
+           checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '6bd876ad-5a62-4208-93e8-f72c1464ee8a', url: 'https://github.com/kanggeaiphp/spring_boot.git']]])
          }
       }
 
