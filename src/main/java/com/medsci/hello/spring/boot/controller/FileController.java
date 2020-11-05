@@ -1,14 +1,13 @@
 package com.medsci.hello.spring.boot.controller;
 
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.medsci.hello.spring.boot.common.ResponseBean;
 import com.medsci.hello.spring.boot.service.FileService;
+import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
@@ -29,7 +28,9 @@ public class FileController {
     @Resource
     private FileService fileService;
 
-    @RequestMapping(value = "/imgs", method = RequestMethod.POST)
+    @RequestMapping(value = "/qiniu/upload", method = RequestMethod.POST)
+    @ApiOperation(value = "上传图片到七牛")
+    @ApiOperationSupport(author = "学长")
     public ResponseBean uploadImg(@RequestParam("file")MultipartFile[] files){
         ResponseBean responseBean = new ResponseBean();
 
@@ -56,5 +57,14 @@ public class FileController {
         }
 
         return responseBean;
+    }
+
+    @PostMapping("/oss/upload")
+    @ApiOperation(value = "上传文件到oss")
+    @ApiOperationSupport(author = "学长")
+    public ResponseBean uploadOss(@RequestParam(value = "file") MultipartFile file){
+        String fileUrl = fileService.uploadOss(file);
+
+        return ResponseBean.ok(fileUrl);
     }
 }

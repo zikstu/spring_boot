@@ -1,8 +1,10 @@
 package com.medsci.hello.spring.boot.service.impl;
 
+import com.medsci.hello.spring.boot.config.OSSConfig;
 import com.medsci.hello.spring.boot.qiniu.QiniuUtil;
 import com.medsci.hello.spring.boot.service.FileService;
 import com.medsci.hello.spring.boot.utils.AudioFileFormat;
+import com.medsci.hello.spring.boot.utils.OSSUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.common.protocol.types.Field;
 import org.slf4j.Logger;
@@ -11,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.jws.Oneway;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -30,6 +33,9 @@ public class FileServiceImpl implements FileService {
 
     @Autowired
     private QiniuUtil qiniuUtil;
+
+    @Autowired
+    private OSSConfig ossConfig;
 
     @Override
     public Map<String, List<String>> uploadImgs(MultipartFile[] file){
@@ -123,5 +129,20 @@ public class FileServiceImpl implements FileService {
         }
 
         return null;
+    }
+
+    @Override
+    public String uploadOss(MultipartFile file) {
+        /*格式化时间*/
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String format = simpleDateFormat.format(new Date());
+
+        /*oss 上传工具*/
+        String ossFileUrl = null;
+
+        /*上传*/
+        ossFileUrl = OSSUtil.upload(ossConfig, file, "jpc/" + format);
+
+        return ossFileUrl;
     }
 }

@@ -24,4 +24,11 @@ public interface FileService {
      * @return
      */
     String AMR2MP3(MultipartFile multipartFile);
+
+    /**
+     * 上传文件到 oss
+     * @param file
+     * @return
+     */
+    String uploadOss(MultipartFile file);
 }
