@@ -10,13 +10,13 @@ import java.lang.annotation.*;
 @Service
 public @interface RSATypeAnnotation {
     /**
-     * RSA key类型 （pri or pub）
+     * RSA key类型 （private or public）
      * @return
      */
     String keyType();
 
     /**
-     * 加密或者解密操作（enc or dec）
+     * 加密或者解密操作（encrypt or decrypt）
      * @return
      */
     String action();

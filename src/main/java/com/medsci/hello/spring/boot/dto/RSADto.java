@@ -1,5 +1,6 @@
 package com.medsci.hello.spring.boot.dto;
 
+import com.medsci.hello.spring.boot.annotation.constraints.RSADtoCheckAction;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
@@ -25,11 +26,13 @@ public class RSADto {
     private String data;
 
     @NotBlank(message = "key类型是必须的！")
-    @ApiModelProperty(value = "RSA key类型（pri or pub）", required = true)
+    @RSADtoCheckAction(name = "keyType")
+    @ApiModelProperty(value = "RSA key类型（private or public）", required = true)
     private String keyType;
 
     @NotBlank(message = "加密或者解密操作是必须的！")
-    @ApiModelProperty(value = "加密或者解密操作（enc or dec）", required = true)
+    @RSADtoCheckAction(name = "action")
+    @ApiModelProperty(value = "加密或者解密操作（encrypt or decrypt）", required = true)
     private String action;
 
     public RSADto(String keyType, String action) {

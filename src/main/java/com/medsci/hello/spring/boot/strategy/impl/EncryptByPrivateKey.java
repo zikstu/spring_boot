@@ -9,7 +9,7 @@ import com.medsci.hello.spring.boot.utils.RSAUtils;
  * @author: 学长
  * @date: 2020/10/15 18:40
  */
-@RSATypeAnnotation(keyType = "pri", action = "enc")
+@RSATypeAnnotation(keyType = "private", action = "encrypt")
 public class EncryptByPrivateKey implements RSAHandler {
 
     @Override

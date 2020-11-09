@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.client.HttpClientErrorException;
 
 import java.security.InvalidKeyException;
 
@@ -26,5 +27,10 @@ public class GlobalException {
     @ExceptionHandler(InvalidKeyException.class)
     public ResponseBean invalidKeyException(InvalidKeyException invalidKeyException){
         return ResponseBean.error("私钥或公钥错误！");
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseBean Exception(Exception e){
+        return ResponseBean.error(e.getMessage());
     }
 }
