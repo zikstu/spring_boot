@@ -35,6 +35,19 @@ spring:
       enabled: true
       transport:
         dashboard: 127.0.0.1:8079
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    timeout: 10000
+    block-when-exhausted: true
+    jedis:
+      pool:
+        max-idle: 200
+        min-idle: 20
+        max-active: 2000
+        max-wait: 1000
 
 
 mybatis:
@@ -66,7 +79,7 @@ HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议
 jwt:
   header: Authorization
   secret: spring-boot-secret
-  expiration: 604800
+  expiration: 43200 # 12h
   tokenHead: "Bearer "
 secure:
   ignored:
