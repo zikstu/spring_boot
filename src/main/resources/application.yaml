@@ -8,7 +8,7 @@ server:
 spring:
   # 环境 dev|uat|prod
   profiles:
-    active: dev
+    active: prod
   application:
     name: hello-spring-boot
   thymeleaf:
