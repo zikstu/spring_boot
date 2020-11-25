@@ -142,8 +142,8 @@ public class UserController {
 
             Map<String, String> tokenMap = new HashMap<>();
 
-            tokenMap.put("token", token);
-            tokenMap.put("tokenHead", tokenHead);
+//            tokenMap.put("token", token);
+            tokenMap.put("token", tokenHead + token);
 
             return ResponseBean.ok(tokenMap);
         }catch (Exception e){
