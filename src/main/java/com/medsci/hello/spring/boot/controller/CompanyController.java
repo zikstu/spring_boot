@@ -4,8 +4,15 @@ import com.medsci.hello.spring.boot.common.ResponseBean;
 import com.medsci.hello.spring.boot.domain.Company;
 import com.medsci.hello.spring.boot.mapper.CompanyMapper;
 import com.medsci.hello.spring.boot.service.CompanyService;
+import org.apache.ibatis.cursor.Cursor;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * @description:
@@ -54,5 +61,25 @@ public class CompanyController {
             responseBean.setReturnMsg(e.getMessage());
             return responseBean;
         }
+    }
+
+    @GetMapping("/limit/{limit}")
+    @ResponseBody
+    @Transactional
+    public ResponseBean scan(@PathVariable("limit") int limit){
+        try {
+            Cursor<Company> cursor = companyMapper.scan(limit);
+
+            ArrayList<Company> companies = new ArrayList<>();
+
+            cursor.forEach(company -> {
+                companies.add(company);
+            });
+
+            return ResponseBean.ok(companies);
+        }catch (Exception e){
+            return ResponseBean.error(e.getMessage());
+        }
+
     }
 }
