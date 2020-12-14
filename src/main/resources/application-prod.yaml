@@ -1,25 +1,4 @@
-spring:
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://115.29.202.92:3306/spring_boot?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
-    username: root
-    password: Yao123456
-    hikari:
-      minimum-idle: 5
-      idle-timeout: 600000
-      maximum-pool-size: 10
-      auto-commit: true
-      pool-name: MyHicariPC
-      max-lifetime: 1800000
-      connection-timeout: 30000
-      connection-test-query: SELECT 1
-
-## aliyun oss
-## 配置说明参考: com.ljq.demo.springboot.common.config.OSSConfig.class
-oss:
-  endpoint: oss-cn-beijing.aliyuncs.com
-  url: https://xuezhang007.oss-cn-beijing.aliyuncs.com/
-  accessKeyId: LTAI4G4jKLPZYyjkioHTfsvk
-  accessKeySecret: ccKhRG2bZX6J4q8s4MS9q1aFCy8fM3
-  bucketName: xuezhang007
+#----nacos 配置-----
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
