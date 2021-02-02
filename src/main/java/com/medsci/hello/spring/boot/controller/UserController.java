@@ -10,6 +10,7 @@ import com.medsci.hello.spring.boot.mapper.UserMapper;
 import com.medsci.hello.spring.boot.mapper.UsersMapper;
 import com.medsci.hello.spring.boot.service.AuthService;
 import com.medsci.hello.spring.boot.service.UserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ import java.util.Map;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/user")
+@Api(tags = "用户")
 public class UserController {
     @Value("${jwt.tokenHead}")
     private String tokenHead;

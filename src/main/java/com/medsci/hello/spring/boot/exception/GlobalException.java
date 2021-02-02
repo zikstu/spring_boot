@@ -33,4 +33,9 @@ public class GlobalException {
     public ResponseBean Exception(Exception e){
         return ResponseBean.error(e.getMessage());
     }
+
+    @ExceptionHandler(MyRestException.class)
+    public ResponseBean Exception(MyRestException e){
+        return ResponseBean.error(e.getMessage());
+    }
 }

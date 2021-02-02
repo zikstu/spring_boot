@@ -7,7 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @description:
+ * 解析监听器，
+ * 每解析一行会回调invoke()方法。
+ * 整个excel解析结束会执行doAfterAllAnalysed()方法
  * @author: 学长
  * @date: 2020/9/21 14:53
  */
