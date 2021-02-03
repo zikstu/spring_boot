@@ -24,7 +24,6 @@ public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {
         ResponseBean statusResponse = new ResponseBean();
         statusResponse.setReturnCode(ExceptionEnum.UNAUTHORIZED.getCode());
         statusResponse.setReturnMsg(ExceptionEnum.UNAUTHORIZED.getMessage());
-        statusResponse.setBody(false);
 
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json");

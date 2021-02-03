@@ -52,7 +52,7 @@ public class FileController {
             } else {
                 responseBean.setReturnMsg("图片上传成功！");
                 responseBean.setReturnCode(200);
-                responseBean.setBody(resultList);
+                responseBean.setData(resultList);
             }
         }
 
