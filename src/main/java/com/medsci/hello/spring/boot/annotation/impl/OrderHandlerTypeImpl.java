@@ -24,6 +24,7 @@ public class OrderHandlerTypeImpl implements OrderHandlerType {
         return source;
     }
 
+    @Override
     public String payMethod(){
         return payMethod;
     }

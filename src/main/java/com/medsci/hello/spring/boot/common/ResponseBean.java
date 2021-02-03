@@ -33,26 +33,26 @@ public class ResponseBean implements Serializable {
         this.returnMsg = returnMsg;
     }
 
-    public Object getBody() {
-        return body;
+    public Object getData() {
+        return data;
     }
 
-    public void setBody(Object body) {
-        this.body = body;
+    public void setData(Object data) {
+        this.data = data;
     }
 
     private String returnMsg = "success";
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Object body;
+    private Object data;
 
     public ResponseBean() {
     }
 
-    public ResponseBean(int returnCode, String returnMsg, Object body) {
+    public ResponseBean(int returnCode, String returnMsg, Object data) {
         this.returnCode = returnCode;
         this.returnMsg = returnMsg;
-        this.body = body;
+        this.data = data;
     }
 
     public ResponseBean(ExceptionEnum exceptionEnum) {
@@ -60,10 +60,10 @@ public class ResponseBean implements Serializable {
         this.returnMsg = exceptionEnum.getMessage();
     }
 
-    public ResponseBean(ExceptionEnum exceptionEnum, Object body) {
+    public ResponseBean(ExceptionEnum exceptionEnum, Object data) {
         this.returnCode = exceptionEnum.getCode();
         this.returnMsg = exceptionEnum.getMessage();
-        this.body = body;
+        this.data = data;
     }
 
     public static ResponseBean ok(String msg) {
@@ -77,7 +77,7 @@ public class ResponseBean implements Serializable {
         ResponseBean responseBean = new ResponseBean();
         responseBean.setReturnCode(200);
         responseBean.setReturnMsg("success");
-        responseBean.setBody(params);
+        responseBean.setData(params);
         return responseBean;
     }
 
@@ -95,11 +95,11 @@ public class ResponseBean implements Serializable {
         return responseBean;
     }
 
-    public static ResponseBean error(ExceptionEnum exceptionEnum, Object body) {
+    public static ResponseBean error(ExceptionEnum exceptionEnum, Object data) {
         ResponseBean responseBean = new ResponseBean();
         responseBean.setReturnCode(exceptionEnum.getCode());
         responseBean.setReturnMsg(exceptionEnum.getMessage());
-        responseBean.setBody(body);
+        responseBean.setData(data);
         return responseBean;
     }
 
@@ -110,11 +110,11 @@ public class ResponseBean implements Serializable {
         return responseBean;
     }
 
-    public static ResponseBean error(ExceptionEnum exceptionEnum, String errorMsg, Object body) {
+    public static ResponseBean error(ExceptionEnum exceptionEnum, String errorMsg, Object data) {
         ResponseBean responseBean = new ResponseBean();
         responseBean.setReturnCode(exceptionEnum.getCode());
         responseBean.setReturnMsg(errorMsg);
-        responseBean.setBody(body);
+        responseBean.setData(data);
         return responseBean;
     }
 
