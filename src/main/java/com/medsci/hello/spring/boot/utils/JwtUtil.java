@@ -67,7 +67,7 @@ public class JwtUtil {
         Claims claims;
         try {
             claims = Jwts.parser()
-                    .setSigningKey("spring-boot-secret")
+                    .setSigningKey("vNHC*&^%VB^&%(*_)(GKLJ41_)*H5huLD")
                     .parseClaimsJws(token)
                     .getBody();
         } catch (Exception e) {
@@ -87,7 +87,7 @@ public class JwtUtil {
         return Jwts.builder()
                 .setClaims(claims)
                 .setExpiration(generateExpirationDate())
-                .signWith(SignatureAlgorithm.HS512, secret)
+                .signWith(SignatureAlgorithm.HS256, "vNHC*&^%VB^&%(*_)(GKLJ41_)*H5huLD")
                 .compact();
     }
 
