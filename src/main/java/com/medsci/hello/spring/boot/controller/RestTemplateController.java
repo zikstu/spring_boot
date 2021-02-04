@@ -25,7 +25,7 @@ import java.util.Map;
  * @date: 2021/1/29 09:19
  */
 @RestController
-@RequestMapping("/restTemplate")
+@RequestMapping("/api/restTemplate")
 @Api(tags = "HTTP请求")
 public class RestTemplateController{
     private final static Logger logger = LoggerFactory.getLogger(RestTemplateController.class);
