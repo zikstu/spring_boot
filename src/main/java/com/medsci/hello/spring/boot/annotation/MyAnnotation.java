@@ -10,8 +10,8 @@ import java.lang.annotation.Target;
  * @author: 学长
  * @date: 2020/6/11 19:04
  */
-@Target({ElementType.METHOD, ElementType.TYPE})
+@Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyAnnotation {
-    String name() default "annotation";
+//    String name() default "annotation";
 }
