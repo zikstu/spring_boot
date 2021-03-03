@@ -3,13 +3,18 @@ package com.medsci.hello.spring.boot.domain;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.*;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * company
  */
 @Data
 @Table(name = "company")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Company implements Serializable {
     /**
      * id

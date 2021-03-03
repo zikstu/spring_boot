@@ -15,5 +15,6 @@ public interface UserMapper extends MyMapper<User> {
 
     List<User> selectByNameOrSex(Map map);
 
+    @Override
     List<User> selectAll();
 }
