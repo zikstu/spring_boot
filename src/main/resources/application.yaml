@@ -64,20 +64,20 @@ pagehelper:
   params: count=countSql
 
 logging:
-  file:
-    name: hello-spring-boot.log
-    path: /logs
-  pattern:
-    level: DEBUG
+  level:
+    hello-spring-boot: trace
+#  file:
+#    name: hello-spring-boot.log
+#    path: /logs
 #  config: classpath:logback-spring.xml
 
 
 #------------------------------Dataway配置-------------------------------------------------
-HASOR_DATAQL_DATAWAY: false # 是否启用 Dataway 功能（必选：默认false）
-HASOR_DATAQL_DATAWAY_ADMIN: 默认false # 是否开启 Dataway 后台管理界面（必选：默认false）
-HASOR_DATAQL_DATAWAY_API_URL: /api/ # dataway  API工作路径（可选，默认：/api/）
-HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/ # dataway-ui 的工作路径（可选，默认：/interface-ui/）
-HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议设置）
+#HASOR_DATAQL_DATAWAY: false # 是否启用 Dataway 功能（必选：默认false）
+#HASOR_DATAQL_DATAWAY_ADMIN: false # 是否开启 Dataway 后台管理界面（必选：默认false）
+#HASOR_DATAQL_DATAWAY_API_URL: /api/ # dataway  API工作路径（可选，默认：/api/）
+#HASOR_DATAQL_DATAWAY_UI_URL: /interface-ui/ # dataway-ui 的工作路径（可选，默认：/interface-ui/）
+#HASOR_DATAQL_FX_PAGE_DIALECT: mysql # SQL执行器方言设置（可选，建议设置）
 
 jwt:
   header: Authorization

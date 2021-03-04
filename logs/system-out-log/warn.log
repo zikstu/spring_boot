@@ -1,0 +1,4 @@
+2021-03-04 17:36:18.119 [main] ERROR com.medsci.hello.spring.boot.HelloSpringBootApplication - error======== 信息
+2021-03-04 17:36:18.119 [main] WARN  com.medsci.hello.spring.boot.HelloSpringBootApplication - error======== 信息
+2021-03-04 17:36:38.166 [main] ERROR com.medsci.hello.spring.boot.HelloSpringBootApplication - error======== 信息
+2021-03-04 17:36:38.166 [main] WARN  com.medsci.hello.spring.boot.HelloSpringBootApplication - warn======== 信息
