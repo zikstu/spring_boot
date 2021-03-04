@@ -140,7 +140,7 @@ public class EsService {
         BulkRequest request = new BulkRequest();
         request.timeout("10s");
 
-        List<Company> companies = companyMapper.select();
+        List<Company> companies = companyMapper.select1();
 
         //进行批处理请求
         for (int i = 0; i <companies.size() ; i++) {

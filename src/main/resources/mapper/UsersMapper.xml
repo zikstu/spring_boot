@@ -24,6 +24,9 @@
         <!--@mbg.generated generated on Thu May 14 10:53:13 CST 2020.-->
         id, `name`, email, password, remember_token, created_at, updated_at
     </sql>
+    <insert id="insert">
+
+    </insert>
     <select id="findByUserName" parameterType="string" resultMap="BaseResultMap">
         select u.*, r.id as rid, r.name as role_name from users u
         LEFT OUTER JOIN user_role ur on u.id = ur.user_id

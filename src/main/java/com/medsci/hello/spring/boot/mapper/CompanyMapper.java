@@ -16,5 +16,5 @@ public interface CompanyMapper extends MyMapper<Company> {
    @Select("select * from company limit #{limit} ")
    Cursor<Company> scan(@Param("limit") int limit);
 
-   List<Company> select();
+   List<Company> select1();
 }

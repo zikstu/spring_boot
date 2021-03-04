@@ -69,6 +69,7 @@ logging:
     path: /logs
   pattern:
     level: DEBUG
+#  config: classpath:logback-spring.xml
 
 
 #------------------------------Dataway配置-------------------------------------------------

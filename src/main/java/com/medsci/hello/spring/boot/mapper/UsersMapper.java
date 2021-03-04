@@ -1,5 +1,4 @@
 package com.medsci.hello.spring.boot.mapper;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 import com.medsci.hello.spring.boot.domain.Users;
@@ -16,4 +15,7 @@ public interface UsersMapper extends MyMapper<Users> {
     Users findByUserName(String name);
 
     Users findAllById(@Param("id")Integer id);
+
+    @Override
+    int insert(Users users);
 }
