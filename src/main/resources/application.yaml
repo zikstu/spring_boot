@@ -19,7 +19,7 @@ spring:
       content-type: text/html
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
-  ## QQ邮箱配置
+  ## 邮箱配置
   mail:
     host: smtp.medsci.cn #发送邮件服务器
     username: service@medsci.cn #发送邮件的邮箱地址
