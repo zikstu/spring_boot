@@ -8,7 +8,7 @@
     <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
     <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS}{GMT+8} [%thread] %-5level %logger{36} - %msg%n" />
     <!-- 定义日志存储的路径 -->
-    <property name="FILE_PATH" value="./logs/system-out-log" />
+    <property name="FILE_PATH" value="./logs/system" />
     <property name="FILE_NAME" value="hello-spring-boot" />
 
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
@@ -27,9 +27,9 @@
 
     <!--文件日志， 按照每天生成日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${FILE_PATH}/system.log</file>
+        <file>${FILE_PATH}/console.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${log.path}.%d{yyyy-MM-dd}.zip</fileNamePattern>
+            <fileNamePattern>${FILE_PATH}/${FILE_NAME}.%d{yyyy-MM-dd}.zip</fileNamePattern>
         </rollingPolicy>
 
         <encoder>
