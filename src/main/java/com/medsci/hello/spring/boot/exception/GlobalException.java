@@ -29,10 +29,10 @@ public class GlobalException {
         return ResponseBean.error("私钥或公钥错误！");
     }
 
-    @ExceptionHandler(Exception.class)
-    public ResponseBean Exception(Exception e){
-        return ResponseBean.error(e.getMessage());
-    }
+//    @ExceptionHandler(Exception.class)
+//    public ResponseBean Exception(Exception e){
+//        return ResponseBean.error(e.getMessage());
+//    }
 
     @ExceptionHandler(MyRestException.class)
     public ResponseBean Exception(MyRestException e){

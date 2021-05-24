@@ -3,6 +3,7 @@ package com.medsci.hello.spring.boot;
 import com.alibaba.nacos.api.config.ConfigType;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import com.medsci.hello.spring.boot.utils.ErrorUtil;
+import com.thebeastshop.forest.springboot.annotation.ForestScan;
 import lombok.extern.slf4j.Slf4j;
 import net.hasor.spring.boot.EnableHasor;
 import net.hasor.spring.boot.EnableHasorWeb;
@@ -26,6 +27,7 @@ import java.net.UnknownHostException;
 @SpringBootApplication
 @NacosPropertySource(dataId = "hello-spring-boot", autoRefreshed = true, type = ConfigType.YAML)
 @MapperScan(basePackages = "com.medsci.hello.spring.boot.mapper")
+@ForestScan(basePackages = {"com.medsci.hello.spring.boot.service"})
 public class HelloSpringBootApplication {
     @Value("${server.servlet.context-path:}")
     private String contextPath;

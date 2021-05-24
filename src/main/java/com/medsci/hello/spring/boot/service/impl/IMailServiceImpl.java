@@ -20,7 +20,7 @@ import java.io.File;
  * @author: 学长
  * @date: 2020/6/2 18:57
  */
-@Service
+@Service("iMailService")
 public class IMailServiceImpl implements IMailService {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 

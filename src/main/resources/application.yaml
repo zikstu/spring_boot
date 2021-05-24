@@ -70,7 +70,7 @@ pagehelper:
 
 logging:
   level:
-    hello-spring-boot: DEBUG
+    hello-spring-boot: INFO
 #  file:
 #    name: hello-spring-boot.log
 #    path: /logs
