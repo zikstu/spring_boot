@@ -30,4 +30,18 @@ public class BookQueryResolver implements GraphQLQueryResolver {
         bookList.add(b);
         return bookList;
     }
+
+    public Book findOneBook(Integer id){
+        Author author = Author.builder()
+                .id(1)
+                .name("Arnold")
+                .age(40)
+                .build();
+        return Book.builder()
+                .id(id)
+                .name("Java编程第三版")
+                .author(author)
+                .publisher("电子工业出版社")
+                .build();
+    }
 }
