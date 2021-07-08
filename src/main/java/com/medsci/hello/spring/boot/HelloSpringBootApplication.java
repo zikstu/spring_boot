@@ -4,12 +4,14 @@ import com.alibaba.nacos.api.config.ConfigType;
 import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import com.medsci.hello.spring.boot.utils.ErrorUtil;
 import com.thebeastshop.forest.springboot.annotation.ForestScan;
+import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.slf4j.Slf4j;
 import net.hasor.spring.boot.EnableHasor;
 import net.hasor.spring.boot.EnableHasorWeb;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryCustomizer;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
@@ -17,7 +19,6 @@ import org.springframework.util.unit.DataSize;
 import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.servlet.MultipartConfigElement;
-import javax.servlet.http.HttpServletResponse;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -72,4 +73,10 @@ public class HelloSpringBootApplication {
             }
         };
     }
+
+    @Bean
+    MeterRegistryCustomizer<MeterRegistry> configurer(@Value("${spring.application.name}") String applicationName){
+        return registry -> registry.config().commonTags("application", applicationName);
+    }
+
 }

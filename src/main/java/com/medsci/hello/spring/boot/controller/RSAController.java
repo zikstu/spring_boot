@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
  */
 @RestController
 @Api(tags = "RSA加解密")
-@RequestMapping("/rsa")
+@RequestMapping("/api/rsa")
 public class RSAController {
     private Map<RSATypeAnnotation, RSAHandler> rsaHandlerMap;
 
