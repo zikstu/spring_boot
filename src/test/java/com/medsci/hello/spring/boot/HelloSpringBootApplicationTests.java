@@ -1,11 +1,5 @@
 package com.medsci.hello.spring.boot;
 
-import cn.smallbun.screw.core.Configuration;
-import cn.smallbun.screw.core.engine.EngineConfig;
-import cn.smallbun.screw.core.engine.EngineFileType;
-import cn.smallbun.screw.core.engine.EngineTemplateType;
-import cn.smallbun.screw.core.execute.DocumentationExecute;
-import cn.smallbun.screw.core.process.ProcessConfig;
 import com.medsci.hello.spring.boot.domain.User;
 import com.medsci.hello.spring.boot.mapper.UserMapper;
 import org.json.JSONArray;
@@ -15,10 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 
-import javax.sql.DataSource;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
