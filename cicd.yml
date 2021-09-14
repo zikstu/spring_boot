@@ -10,7 +10,7 @@ workflow:
       remote_url: https://github.com/zikstu/spring_boot.git
       ref: refs/heads/master
       netrc_username: kanggeaiphp@163.com
-      netrc_password: Github123456.
+      netrc_password: Github123456.11
       netrc_machine: github.com
   send_message:
     type: end
