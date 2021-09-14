@@ -1,0 +1,4 @@
+workflow:
+  name: springboot
+  ref: spring-boot-build
+  description: 发布流程
