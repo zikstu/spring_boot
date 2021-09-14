@@ -3,7 +3,7 @@ workflow:
   ref: spring-boot-build
   description: 发布流程
   git_clone:
-    type: git_clone:1.0.0
+    type: start
     param:
       remote_url: https://github.com/zikstu/spring_boot.git
       ref: refs/heads/master
@@ -11,7 +11,7 @@ workflow:
       netrc_password: Github123456.
       netrc_machine: github.com
   send_message:
-    type: qywx_notice:1.0.0
+    type: end
     param:
       bot_webhook_url: ((charbot.webhook_url))
       mentioned_moblie_list: "[18616712514]"
